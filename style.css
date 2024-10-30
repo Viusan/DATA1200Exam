@@ -7,6 +7,10 @@ ul {
     padding: 0;/*removes the space infront of the text*/
 }
 
+a {
+    text-decoration: none;/*removes the url look*/
+}
+
 /*Information about other courses*/
 .otherCourse{
     display: inline; /*Displays content horizontally*/
