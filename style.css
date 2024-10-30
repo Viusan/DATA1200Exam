@@ -17,3 +17,7 @@ ul {
 .otherCourse:last-child{
     border-right: none;/*The last li element wont get a border*/
 }
+
+.socialMediaLogos{
+    height: 20px;
+}
