@@ -1,5 +1,33 @@
 body { 
     font-family: Arial, sans-serif;/*arial as default font*/
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #212121;
+    padding: 16px 32px;
+    border-bottom: 3px solid #8c38ff;
+}
+
+.menu{
+    display: inline;
+    }
+
+.menu a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition:0.4s ;
+    padding: 8px 25px;
+    border-radius: 99px;
 }
 
 ul {
