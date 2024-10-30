@@ -11,9 +11,13 @@ ul {
 .otherCourse{
     display: inline; /*Displays content horizontally*/
     border-right: 1px solid black;
-    padding: 5px; /*TEMP FIND BETTER WAY*/
+    padding: 5px; /*TEMP FIND BETTER UNIT*/
 }
 
 .otherCourse:last-child{
     border-right: none;/*The last li element wont get a border*/
+}
+
+.socialMediaLogos{
+    height: 15px;
 }
