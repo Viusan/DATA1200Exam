@@ -1,0 +1,19 @@
+body { 
+    font-family: Arial, sans-serif;/*arial as default font*/
+}
+
+ul {
+    list-style-type: none;/*removes bullet point infront of text*/
+    padding: 0;/*removes the space infront of the text*/
+}
+
+/*Information about other courses*/
+.otherCourse{
+    display: inline; /*Displays content horizontally*/
+    border-right: 1px solid black;
+    padding: 5px; /*TEMP FIND BETTER WAY*/
+}
+
+.otherCourse:last-child{
+    border-right: none;/*The last li element wont get a border*/
+}
