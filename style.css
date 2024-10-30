@@ -18,6 +18,10 @@ ul {
     border-right: none;/*The last li element wont get a border*/
 }
 
+#footerContainer{
+    display: flex;
+}
+
 .socialMediaLogos{
     height: 15px;
 }
