@@ -7,11 +7,9 @@ body {
 }
 
 nav{
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
     background-color: #212121;
     padding: 16px 32px;
     border-bottom: 3px solid #8c38ff;
@@ -19,7 +17,7 @@ nav{
 
 .menu{
     display: inline;
-    }
+}
 
 .menu a {
     color: #fff;
