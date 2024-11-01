@@ -37,6 +37,17 @@ a {
     text-decoration: none;/*removes the url look*/
 }
 
+#courseInformationContainer{
+    display: flex;
+    flex-wrap: wrap; /*content wraps around*/   
+}
+
+#courseInformationContainer section{
+    margin: 10px;
+    width: 250px;/*defining how big each element can be*/
+    border-top: 1px solid black;
+}
+
 /*Information about other courses*/
 .otherCourse{
     display: inline; /*Displays content horizontally*/
