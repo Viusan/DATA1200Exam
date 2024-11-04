@@ -65,3 +65,8 @@ a {
 .socialMediaLogos{
     height: 15px;
 }
+
+#footerContainer{/*i dont know if grid is a good sollution*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
