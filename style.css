@@ -48,6 +48,7 @@ a {
 }
 
 /*Information about other courses*/
+
 .otherCourse{
     display: inline; /*Displays content horizontally*/
     border-right: 1px solid black;
@@ -58,12 +59,13 @@ a {
     border-right: none;/*The last li element wont get a border*/
 }
 
+ .otherCourseLiElement{
+    padding: 0 0 10px 0;
+    border-top: 2px solid black;
+ }
+
 #footerContainer{
     display: flex;
-}
-
-.socialMediaLogos{
-    height: 15px;
 }
 
 #footerContainer{/*i dont know if grid is a good sollution*/
@@ -88,7 +90,26 @@ a {
     font-weight: bold;
 }
 
-#socialsContainer{
+/* Container for the social media links */
+#socialsContainer {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column; /* Ensures links stay in a column layout */
+    gap: 10px; /* Adds space between each link */
+}
+
+/* Style for each social media link */
+#socialsContainer a {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    gap: 8px; /* Adds space between the icon and the text */
+}
+
+.socialMediaLogos{
+    height: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    #footerContainer {
+        grid-template-columns: 1fr; /*turns grid into collumn instead of row*/
+    }
 }
