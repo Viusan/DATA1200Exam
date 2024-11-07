@@ -74,6 +74,7 @@ a {
     background-color: #162957;
     color: white;
     padding: 25px 0 0 25px;;
+    gap: 25px; /*Adds space between the grid elements*/
 }
 
 #footerContainer a{
@@ -86,7 +87,7 @@ a {
 }
 
 #footerOtherLinks ul li{
-    margin: 10px;
+    margin: 10px 0 10px 0;
     font-weight: bold;
 }
 
@@ -102,10 +103,11 @@ a {
     display: flex;
     align-items: center; /* Aligns image and text vertically */
     gap: 8px; /* Adds space between the icon and the text */
+    font-size: 20px;
 }
 
 .socialMediaLogos{
-    height: 15px;
+    height: 25px;
 }
 
 @media only screen and (max-width: 800px) {
