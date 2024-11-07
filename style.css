@@ -61,7 +61,10 @@ a {
 
  .otherCourseLiElement{
     padding: 0 0 10px 0;
-    border-top: 2px solid black;
+    border-top: 1px solid grey;
+    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
  }
 
 #footerContainer{
@@ -113,5 +116,9 @@ a {
 @media only screen and (max-width: 800px) {
     #footerContainer {
         grid-template-columns: 1fr; /*turns grid into collumn instead of row*/
+    }
+
+    .otherCourseLiElement{
+        width: 100%;
     }
 }
