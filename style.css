@@ -66,8 +66,8 @@ a {
 
  .otherCourseLiElement{
     padding: 0 0 10px 0;
+    margin: 0 10px 0 0;
     border-top: 1px solid grey;
-    width: 500px;
     display: flex;
     flex-flow: column wrap;
  }
@@ -126,5 +126,9 @@ a {
     #otherCourseUlElement{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .otherCourseLiElement{
+        width: 100%;
     }
 }
