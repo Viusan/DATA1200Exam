@@ -48,6 +48,10 @@ a {
 }
 
 /*Information about other courses*/
+#otherCourseContainer h2{
+    font-size: 2em;
+}
+
 
 #otherCourseUlElement{
     display: grid;
