@@ -7,21 +7,25 @@
     <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
 </head>
 <body>
-<header>
-        <!-- <picture>
-        <img src="Images/oslomet_logo.png" alt="logo">
-        </picture> -->
-    <!--
-    <nav>
-        <ul>
-            <li  class="menu"><a href="index.html">Matematisk modellering</a></li>
-            <li  class="menu"><a href="accessibility.html">Accessibility</a></li>
-            <li  class="menu"><a href="activity.html">Activity page</a></li>
-            <li  class="menu"><a href="github.html">GitHub</a></li>
-        </ul>
-    </nav>
-    -->
-</header>
+    <header>
+        <div class="menu-icon"onclick="toggleMenu()">&#9776;</div> <!-- This are the threee lines that indicates the menu-->
+        <nav id="nav-menu"   class="hidden">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+            <li><a href="accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="activity.html">Aktivitet</a></li>
+            <li><a href="github.html">GitHub</a>
+            </li>
+
+                
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    
 <main>
     <article>
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
@@ -222,5 +226,18 @@
         </section>
     </article>
 </footer>
+
+<script>
+    function toggleMenu(){
+        var menu = document.getElementById("nav-menu");
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            
+        } else {
+            menu.classList.add("hidden");
+            
+        }
+    }
+</script>
 </body>
 </html>
