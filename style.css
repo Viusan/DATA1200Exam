@@ -48,6 +48,15 @@ a {
 }
 
 /*Information about other courses*/
+#otherCourseContainer h2{
+    font-size: 2em;
+}
+
+
+#otherCourseUlElement{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .otherCourse{
     display: inline; /*Displays content horizontally*/
@@ -61,8 +70,8 @@ a {
 
  .otherCourseLiElement{
     padding: 0 0 10px 0;
+    margin: 0 10px 0 0;
     border-top: 1px solid grey;
-    width: 500px;
     display: flex;
     flex-flow: column wrap;
  }
@@ -116,6 +125,11 @@ a {
 @media only screen and (max-width: 800px) {
     #footerContainer {
         grid-template-columns: 1fr; /*turns grid into collumn instead of row*/
+    }
+
+    #otherCourseUlElement{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .otherCourseLiElement{
