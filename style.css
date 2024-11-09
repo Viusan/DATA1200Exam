@@ -36,6 +36,44 @@ a {
     color: black;
 }
 
+/*Navigation menu*/
+#nav-menu.hidden {
+    display: none;/* this hides the menu whenn the page is loading*/
+}
+
+/*Style menu icon*/
+.menu-icon {
+    right: 25px; /* it moves the menu icon 25px from the right corner*/
+    top: 25px;/* it moves the menu icon 25 from the top */
+    position: absolute;
+    cursor: pointer;/* the pointer is changed to a hand to show tha it can be clicked*/
+    font-size: 25px;/* shows the size of the lines (menu icon)*/
+}
+
+/*menu style when it is opened*/
+#nav-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /*shows the options in one coloumn*/
+    list-style: none;
+    top: 55px; /* it places 55px under the top( under the icon)*/
+    right: 25px; /* it places the menu  25px from the right*/
+    border: solid #8f2aa3;
+    background-color: aliceblue;
+}
+
+#nav-menu ul li {
+    text-decoration: none; 
+    color: black; /* black colour for linktext */
+    font-synthesis-weight: bold;
+}
+
+#nav-menu ul li {
+    padding: 10px; /* space between every selection in the menu*/
+}
+
+/*Course Information*/
 #courseInformationContainer{
     display: flex;
     flex-wrap: wrap; /*content wraps around*/   
@@ -47,6 +85,7 @@ a {
     border-top: 1px solid black;
 }
 
+/*Information about contacts and location*/
 #programContacts{
     display: flex;
     justify-content: center;
@@ -67,7 +106,6 @@ a {
     width: 100px;
     margin-right: 10px;
 }
-
 
 /*Information about other courses*/
 #otherCourseContainer{
@@ -192,47 +230,7 @@ a {
 }
 
 
-/* hides menu until it is opened*/
 
-#nav-menu.hidden {
-    display: none;
-}
-    /* this hides the menu whenn the page is loading*/
-
-
-/*Style menu icon*/
-.menu-icon {
-    right: 25px; /* it moves the menu icon 25px from the right corner*/
-    top: 25px;/* it moves the menu icon 25 from the top */
-    position: absolute;
-    cursor: pointer;/* the pointer is changed to a hand to show tha it can be clicked*/
-    font-size: 25px;/* shows the size of the lines (menu icon)*/
-}
-
-/*menu style when it is opened*/
-#nav-menu ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /*shows the options in one coloumn*/
-    list-style: none;
-    top: 55px; /* it places 55px under the top( under the icon)*/
-    right: 25px; /* it places the menu  25px from the right*/
-    border: solid #8f2aa3;
-    background-color: aliceblue;
-
-}
-
-#nav-menu ul li {
-    text-decoration: none; 
-    color: black; /* black colour for linktext */
-    font-synthesis-weight: bold;
-}
-
-#nav-menu ul li {
-    padding: 10px; /* space between every selection in the menu*/
-
-}
 
 
 
