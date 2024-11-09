@@ -13,19 +13,6 @@ nav{
     border-bottom: 3px solid #8c38ff;
 }
 
-.menu{
-    display: inline;
-}
-
-.menu a {
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    transition:0.4s ;
-    padding: 8px 25px;
-    border-radius: 99px;
-}
-
 ul {
     list-style-type: none;/*removes bullet point infront of text*/
     padding: 0;/*removes the space infront of the text*/
@@ -67,9 +54,6 @@ a {
     text-decoration: none; 
     color: black; /* black colour for linktext */
     font-synthesis-weight: bold;
-}
-
-#nav-menu ul li {
     padding: 10px; /* space between every selection in the menu*/
 }
 
