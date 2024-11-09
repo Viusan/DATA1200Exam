@@ -77,7 +77,28 @@ a {
 }
 
 #locationAndQuestionWrapper, #fagligLederSection{
-    margin: 50px
+    margin: 50px;
+}
+
+#studiested a, #questionAboutEdu a{
+    text-decoration: underline;
+    padding: 16px 32px;
+}
+
+#studiested a:hover, #questionAboutEdu a:hover{
+    color: #007EA7;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 #fagligLederSection a{
@@ -173,20 +194,6 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-    #programContacts{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #stuidested{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    #questionAboutEdu{
-        grid-column: 1;
-        grid-row: 2;
-    }
-
     #programContacts{
         flex-direction: column;
     }
