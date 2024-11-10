@@ -122,11 +122,11 @@ a {
 
 #otherCourseUlElement{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);/*Creates a grid with 2 collumns*/
 }
 
 #otherCourseUlElement a:hover{
-    text-decoration: underline;
+    text-decoration: underline;/*Gives underline when hovering over element*/
 }
 
 .otherCourse{
@@ -162,11 +162,11 @@ a {
 
 #footerContainer a{
     color: white;
-    text-decoration: none;
+    text-decoration: none;/*removed url decoration*/
 }
 
 #footerContainer a:hover{
-    text-decoration: underline;
+    text-decoration: underline;/*Gives underline when hovering over element*/
 }
 
 #footerOtherLinks ul li{
@@ -208,7 +208,7 @@ a {
 
     #otherCourseUlElement{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);/*changing the grid to become 1 collumn*/
     }
 
     .otherCourseLiElement{
