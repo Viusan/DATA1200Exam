@@ -8,16 +8,34 @@
 </head>
 
 <header>
-    <nav>
-        <li><a href="index.html">Hjem</a></li>
+    <div class="menu-icon"onclick="toggleMenu()">&#9776;</div> <!-- This are the threee lines that indicates the menu-->
+    <nav id="nav-menu"   class="hidden"> <!-- &9776  is a special code that shows the hamburgermeny-->
+        <ul> 
+            <li><a href="index.html">Hjem</a></li>
         <li><a href="accessibility.html">Tilgjengelighet</a></li>
         <li><a href="activity.html">Aktivitet</a></li>
         <li><a href="github.html">GitHub</a>
         </li>
+
+            
+
+        </ul>
     </nav>
 
 </header>
-
+<script>
+    /*  the function controles when the menu is hidde or unhidden*/
+    function toggleMenu(){
+        var menu = document.getElementById("nav-menu"); /* finds the menu with the ID "nav-menu*/
+        if (menu.classList.contains("hidden")) { /* controls if the menu is hidden*/
+            menu.classList.remove("hidden");/*it will show the menu if it is hidden*/
+            
+        } else {
+            menu.classList.add("hidden");
+            
+        }
+    }
+</script>
 
 </body>
 </html>
