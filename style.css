@@ -9,22 +9,8 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-    
     padding: 16px 32px;
     border-bottom: 3px solid #8c38ff;
-}
-
-.menu{
-    display: inline;
-}
-
-.menu a {
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    transition:0.4s ;
-    padding: 8px 25px;
-    border-radius: 99px;
 }
 
 ul {
@@ -34,8 +20,44 @@ ul {
 
 a {
     text-decoration: none;/*removes the url look*/
+    color: black;
 }
 
+/*Navigation menu*/
+#nav-menu.hidden {
+    display: none;/* this hides the menu whenn the page is loading*/
+}
+
+/*Style menu icon*/
+.menu-icon {
+    right: 25px; /* it moves the menu icon 25px from the right corner*/
+    top: 25px;/* it moves the menu icon 25 from the top */
+    position: absolute;
+    cursor: pointer;/* the pointer is changed to a hand to show tha it can be clicked*/
+    font-size: 25px;/* shows the size of the lines (menu icon)*/
+}
+
+/*menu style when it is opened*/
+#nav-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /*shows the options in one coloumn*/
+    list-style: none;
+    top: 55px; /* it places 55px under the top( under the icon)*/
+    right: 25px; /* it places the menu  25px from the right*/
+    border: solid #8f2aa3;
+    background-color: aliceblue;
+}
+
+#nav-menu ul li {
+    text-decoration: none; 
+    color: black; /* black colour for linktext */
+    font-synthesis-weight: bold;
+    padding: 10px; /* space between every selection in the menu*/
+}
+
+/*Course Information*/
 #courseInformationContainer{
     display: flex;
     flex-wrap: wrap; /*content wraps around*/   
@@ -47,15 +69,64 @@ a {
     border-top: 1px solid black;
 }
 
+/*Information about contacts and location*/
+#programContacts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#locationAndQuestionWrapper, #fagligLederSection{
+    margin: 50px;
+}
+
+#studiested a, #questionAboutEdu a{
+    text-decoration: underline;
+    padding: 16px 32px;
+}
+
+#studiested a:hover, #questionAboutEdu a:hover{
+    color: #007EA7;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#fagligLederSection a{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#imageOfCourseLeader{
+    width: 100px;
+    margin-right: 10px;
+}
+
 /*Information about other courses*/
+#otherCourseContainer{
+    margin: 0 20px 0 20px;
+}
 #otherCourseContainer h2{
     font-size: 2em;
 }
 
-
 #otherCourseUlElement{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);/*Creates a grid with 2 collumns*/
+}
+
+#otherCourseUlElement a:hover{
+    text-decoration: underline;/*Gives underline when hovering over element*/
 }
 
 .otherCourse{
@@ -68,13 +139,13 @@ a {
     border-right: none;/*The last li element wont get a border*/
 }
 
- .otherCourseLiElement{
+.otherCourseLiElement{
     padding: 0 0 10px 0;
     margin: 0 10px 0 0;
     border-top: 1px solid grey;
     display: flex;
     flex-flow: column wrap;
- }
+}
 
 #footerContainer{
     display: flex;
@@ -91,11 +162,11 @@ a {
 
 #footerContainer a{
     color: white;
-    text-decoration: none;
+    text-decoration: none;/*removed url decoration*/
 }
 
 #footerContainer a:hover{
-    text-decoration: underline;
+    text-decoration: underline;/*Gives underline when hovering over element*/
 }
 
 #footerOtherLinks ul li{
@@ -123,66 +194,36 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-    #footerContainer {
-        grid-template-columns: 1fr; /*turns grid into collumn instead of row*/
+    #programContacts{
+        flex-direction: column;
+    }
+
+    #locationAndQuestionWrapper{
+        margin-bottom: 0;
+    }
+
+    #fagligLederSection{
+        margin-top: 0;
     }
 
     #otherCourseUlElement{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);/*changing the grid to become 1 collumn*/
     }
 
     .otherCourseLiElement{
         width: 100%;
     }
-}
 
-
-/* hides menu until it is opened*/
-
-#nav-menu.hidden {
-    display: none;
-}
-    /* this hides the menu whenn the page is loading*/
-
-
-/*Style menu icon*/
-.menu-icon {
-    right: 25px; /* it moves the menu icon 25px from the right corner*/
-    top: 25px;/* it moves the menu icon 25 from the top */
-    position: absolute;
-    cursor: pointer;/* the pointer is changed to a hand to show tha it can be clicked*/
-    font-size: 25px;/* shows the size of the lines (menu icon)*/
-}
-
-   
-/*menu style when it is opened*/
-
-#nav-menu ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /*shows the options in one coloumn*/
-    list-style: none;
-    top: 55px; /* it places 55px under the top( under the icon)*/
-    right: 25px; /* it places the menu  25px from the right*/
-    border: solid #8f2aa3;
-    background-color: aliceblue;
-
-}
-
-#nav-menu ul li {
-    text-decoration: none; 
-    color: black; /* black colour for linktext */
-    font-synthesis-weight: bold;
-}
-
-#nav-menu ul li {
-    padding: 10px; /* space between every selection in the menu*/
-
+    #footerContainer {
+        grid-template-columns: 1fr; /*turns grid into collumn instead of row*/
+    }
 }
 
 /* Github */
+
+
+
 
 
 
