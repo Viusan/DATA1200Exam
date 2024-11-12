@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>activity-page</title>
 </head>
 <body>
     <header>
@@ -17,6 +17,44 @@
                 <li><a href="github.html">GitHub</a></li>                
             </ul>
         </nav>
+
+        <article class="container">
+            <section class="slider">
+                <input type="radio" class="radio" name="images" id="radio-1">
+                <input type="radio" class="radio" name="images" id="radio-2">
+                <input type="radio" class="radio" name="images" id="radio-3">
+        
+    
+                <section class="slide" id="slide-1">
+                    <img src="Images/travelling.jpg" alt="">
+                    <div class="caption">
+                        <h1>Aktivitet 1</h1>
+                    </div>
+                </section>
+    
+                <section class="slide" id="slide-2">
+                    <img src="Images/football.jpg" alt="">
+                    <div class="caption">
+                        <h1>Aktivitet 2</h1>
+                    </div>
+                </section>
+    
+                <section class="slide" id="slide-3">
+                    <img src="Images/game.jpg" alt="">
+                    <div class="caption">
+                        <h1>Aktivitet 3</h1>
+                    </div>
+                </section>
+    
+                <section class="dots">
+                    <label for="radio-1" id="label1"></label>
+                    <label for="radio-2" id="label2"></label>
+                    <label for="radio-3" id="label3"></label>
+                </section>
+    
+            </section>
+        </article>
+
     </header>
     <script src="script.js"></script>
 </body>
