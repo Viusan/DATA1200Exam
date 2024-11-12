@@ -89,14 +89,14 @@ a {
     color: #007EA7;
 }
 
-.arrow {
+.arrow {/*Styling a triangle*/
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
 }
 
-.right {
+.right { /*This rotates the triangle to point towards the right*/
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
@@ -121,8 +121,8 @@ a {
 }
 
 #otherCourseUlElement{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);/*Creates a grid with 2 collumns*/
+    display: grid;/*creates a grid*/
+    grid-template-columns: repeat(2, 1fr);/*defines the grid to have 2 collumns*/
 }
 
 #otherCourseUlElement a:hover{
@@ -171,7 +171,7 @@ a {
 
 #footerOtherLinks ul li{
     margin: 10px 0 10px 0;
-    font-weight: bold;
+    font-weight: bold;/*makes the text thicker*/
 }
 
 /* Container for the social media links */
@@ -193,7 +193,7 @@ a {
     height: 25px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {/*media breakpoint to help with responsivness when the screen becomes smaller*/
     #programContacts{
         flex-direction: column;
     }
