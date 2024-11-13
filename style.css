@@ -130,6 +130,10 @@ a {
     margin-right: 10px;
 }
 
+#fagligLederTextSection p:hover{/*NEEDS MORE WORK*/
+    text-decoration: underline;
+}
+
 /*Information about other courses*/
 #otherCourseContainer{
     margin: 0 20px 0 20px;
