@@ -75,6 +75,16 @@ a {
     display: flex;
     justify-content: center; 
     text-align: center;
+    font-size: 1.25em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 10px 0 10px;
+}
+
+.highlightedTxt{
+    background-image: linear-gradient(#162957, blue);
+    color: transparent;
+    background-clip: text;
 }
 
 /*Information about contacts and location*/
