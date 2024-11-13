@@ -69,6 +69,14 @@ a {
     border-top: 1px solid black;
 }
 
+
+/*Random Text*/
+#randomTextContainer{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
 /*Information about contacts and location*/
 #programContacts{
     display: flex;
