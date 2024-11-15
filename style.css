@@ -86,7 +86,8 @@ a {
 #courseInformationContainer section{
     margin: 10px;
     width: 250px;/*defining how big each element can be*/
-    border-top: 1px solid black;
+    border-top: 3px solid #007EA7;
+    box-shadow: 10px 10px 5px lightblue;
 }
 
 
@@ -105,6 +106,29 @@ a {
     background-image: linear-gradient(#162957, blue);
     color: transparent;
     background-clip: text;
+}
+
+/*Collapsable menu*/
+#collapsibleContainer{/*pushes it away from the edges of the site*/
+    margin: 10px 50px 0px 50px;
+}
+
+.collapsible{
+    cursor: pointer;/*Changes how cursor looks when hovered over button, helps people understand its supposed to pressed*/
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    padding: 18px;
+}
+
+.content{
+    display: none;
+}
+
+.active, .collapsible:hover {
+    background-color: #162957;
+    color:white;
 }
 
 /*Information about contacts and location*/
@@ -186,7 +210,7 @@ a {
 .otherCourseLiElement{
     padding: 0 0 10px 0;
     margin: 0 10px 0 0;
-    border-top: 1px solid grey;
+    border-top: 1px solid #007EA7;
     display: flex;
     flex-flow: column wrap;
 }
