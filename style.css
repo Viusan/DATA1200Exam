@@ -10,7 +10,7 @@ nav{
     left: 0;
     right: 0;
     padding: 16px 32px;
-    border-bottom: 3px solid #8c38ff;
+    border-bottom: 3px solid black;
 }
 
 ul {
@@ -38,6 +38,10 @@ a {
 }
 
 /*menu style when it is opened*/
+#nav-menu{
+    background-color: #162957;
+}
+
 #nav-menu ul {
     padding: 0;
     margin: 0;
@@ -46,8 +50,6 @@ a {
     list-style: none;
     top: 55px; /* it places 55px under the top( under the icon)*/
     right: 25px; /* it places the menu  25px from the right*/
-    border: solid #8f2aa3;
-    background-color: aliceblue;
 }
 
 #nav-menu ul li {
@@ -57,10 +59,28 @@ a {
     padding: 10px; /* space between every selection in the menu*/
 }
 
+#nav-menu ul li a{
+    color: white;
+}
+
+#titleCourseContainer{
+    margin: 50px 0 0 50px;
+}
+
+#titleCourseContainer h1{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+#titleCourseContainer p{
+    font-size: 1.5em;
+}
+
 /*Course Information*/
 #courseInformationContainer{
     display: flex;
-    flex-wrap: wrap; /*content wraps around*/   
+    flex-wrap: wrap; /*content wraps around*/  
+    margin: 0 50px 0 50px; 
 }
 
 #courseInformationContainer section{
