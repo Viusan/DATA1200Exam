@@ -272,14 +272,24 @@ a {
 #moreStoriesLink{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    text-align: center;
     margin-top: 20px;
 }
 
 #moreStoriesLink a{
     color: white;
     background-color: #162957;
+    height: 75px;
+    width: 50%;
+    align-content: center;
+    transition: 0.3s;
+    opacity: 1;
 }
+
+#moreStoriesLink a:hover{
+    opacity: 0.9
+}
+
 /*Footer Section*/
 #footerContainer{
     display: flex;
