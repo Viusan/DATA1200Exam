@@ -360,11 +360,6 @@ a {
     display: none;
 }
 
-.body{
-    background-color: #141414;
-
-}
-
 .container{
     position: relative;
     max-width: 800px;
@@ -376,10 +371,8 @@ a {
     position: relative;
     height: 0;
     padding-top: 56.25%;
-    background-color: #141414;
+    background-color: #000;
     overflow: hidden;
-    border: 1px #2e2e2e;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 .slide{
@@ -396,7 +389,7 @@ a {
     height: 100%;
     object-fit: cover;
     transform: scale(1.1);
-    transition: 1.3s;
+    transition: 2s;
 }
 
 .caption{
@@ -405,12 +398,8 @@ a {
     left: 5%;
     top: 5%;
     color: #fff;
-    font-weight: 900;
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: -5px;
-    line-height: 50px;
-    transition: 0.9s;
+    font-size: 40px;
+    transition: 1.5s;
 }
 
 .dots{
@@ -419,8 +408,6 @@ a {
     bottom: 5%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
 }
 
 .dots label{
@@ -431,7 +418,6 @@ a {
     border-radius: 50%;
     opacity: 0.3;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
 }
 
 .dots label:hover{
