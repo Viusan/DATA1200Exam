@@ -290,6 +290,37 @@ a {
     opacity: 0.9
 }
 
+/*Subcribe to get notification section*/
+#newsAlertSectionContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #162957;
+    border-bottom: 1px solid white;
+    padding: 25px;
+    margin-top: 100px;
+}
+
+
+#newsAlertText{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#newsLinkSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+#newsLinkSection a{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
 /*Footer Section*/
 #footerContainer{
     display: flex;
@@ -360,6 +391,10 @@ a {
     }
 
     #studentFeatureContent{
+        flex-flow: column;
+    }
+
+    #newsAlertSectionContainer{
         flex-flow: column;
     }
 
