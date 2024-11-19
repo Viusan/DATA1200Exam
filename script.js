@@ -25,3 +25,8 @@ for (var i = 0; i < coll.length; i++) {//Loops through how many collapsibles the
     }
   });
 }
+
+var img = document.querySelector('#radio-1');
+if (img){
+  img.checked = true;
+}
