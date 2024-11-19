@@ -502,6 +502,11 @@ top: 25%;
     font-size: 35px;
 }
 
+.heading-text h1{
+    margin: 0;
+    margin-top: 2%;
+}
+
 .radio{
     display: none;
 }
@@ -595,33 +600,21 @@ top: 25%;
     font-size: 80px;
 }
 
-.links{
+.text-section h1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.les-mer a{
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-}
-
-.les-mer a:hover{
-    font-size: 30px;
-}
-
-.tekst-seksjon {
-    padding: 20px;
-    margin-top: 40%;
-    background: #f5f5f5;
-}
-
-.tekst-seksjon img{
-    display: flex;
-    width: 50px;
-    justify-content: space-;
+.Activity-table table{
+    width: 100%;
+    background-color: #f5f5f5;
 
 }
+
+.Activity-table table tr, td{
+    padding: 15px;
+}
+
 
 
 
