@@ -495,11 +495,10 @@ top: 25%;
 }
 
 /* Css for the activity page */
-
 .heading-text{
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: 2.5em;
 }
 
 .heading-text h1{
@@ -603,7 +602,9 @@ top: 25%;
 .text-section h1{
     display: flex;
     justify-content: center;
+    font-size: 1.25em;
 }
+
 
 .Activity-table table{
     width: 100%;
