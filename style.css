@@ -242,10 +242,18 @@ a {
     padding: 50px;
 }
 
+#studentHistorierTextSection a{
+    color: white;
+}
+
 #tekOgDes{
     color: white;
     text-decoration: underline;
     font-weight: bold;
+}
+
+#studentHistorierImageContainer{
+    overflow: hidden;
 }
 
 #studentHistorierImageContainer a img{
@@ -254,19 +262,34 @@ a {
     width: 100%;
     object-fit: cover;
     top: 0;
+    transition: transform .2s; /* Animation */
+}
+
+#studentHistorierImageContainer a img:hover{
+    transform: scale(1.1)
 }
 
 #moreStoriesLink{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    text-align: center;
     margin-top: 20px;
 }
 
 #moreStoriesLink a{
     color: white;
     background-color: #162957;
+    height: 75px;
+    width: 50%;
+    align-content: center;
+    transition: 0.3s;
+    opacity: 1;
 }
+
+#moreStoriesLink a:hover{
+    opacity: 0.9
+}
+
 /*Footer Section*/
 #footerContainer{
     display: flex;
