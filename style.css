@@ -77,19 +77,33 @@ a {
 }
 
 /*Course Information*/
-#courseInformationContainer{
+#courseInformationSection{
     display: flex;
-    flex-wrap: wrap; /*content wraps around*/  
-    margin: 0 50px 0 50px; 
-}
-
-#courseInformationContainer section{
+    justify-content: center;
     margin: 10px;
-    width: 250px;/*defining how big each element can be*/
-    border-top: 3px solid #007EA7;
-    box-shadow: 10px 10px 5px lightblue;
 }
 
+#courseInformationTable{
+    width: 100%;
+}
+
+#courseInformationTable th, #courseInformationTable td{
+    border: solid 1px black;
+    padding: 20px;
+}
+
+#courseInformationTable th{
+    background-color: #162957;
+    color: white;
+}
+
+#courseInformationTable td, #smallCourseInformationTable td{
+    background-color: #e9e9ed;
+}
+
+#smallCourseInformationSection{
+    display: none;
+}
 
 /*Random Text*/
 #randomTextContainer{
@@ -373,6 +387,31 @@ a {
 }
 
 @media only screen and (max-width: 800px) {/*media breakpoint to help with responsivness when the screen becomes smaller*/
+    #courseInformationSection{
+        display: none;
+    }
+
+    #smallCourseInformationSection{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin: 10px;
+    }
+
+    #smallCourseInformationTable{
+        width: 100%;
+    }
+
+    #smallCourseInformationTable th, #smallCourseInformationTable td{
+        border: solid 1px black;
+        padding: 20px;
+    }
+
+    #smallCourseInformationTable th{
+        background-color: #162957;
+        color: white;
+    }
+    
     #programContacts{
         flex-direction: column;
     }
