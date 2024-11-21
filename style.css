@@ -146,6 +146,10 @@ a {
     text-align: left;
 }
 
+#courseConstructionSection table{
+    table-layout: fixed;
+}
+
 #courseConstructionSection th{
     background-color: #162957;
     color: white;
@@ -153,6 +157,7 @@ a {
 
 #courseConstructionSection td{
     background-color: #e9e9ed;
+    width: 33%;
 }
 
 #courseConstructionSection a{
