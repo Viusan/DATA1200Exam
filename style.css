@@ -611,7 +611,7 @@ top: 25%;
     left: 5%;
     top: 5%;
     color: #fff;
-    font-size: 40px;
+    font-size: 1.5em;
     transition: 1.5s;
 }
 
@@ -671,6 +671,9 @@ top: 25%;
     color: #fff;
 }
 
+.Activity-table{
+    overflow-x: auto;
+}
 
 .Activity-table table{
     width: 100%;
@@ -685,6 +688,55 @@ top: 25%;
 
 .Activity-table table th{
     background-color: #555555;
+}
+
+
+.Small-Activity-table{
+    overflow-x: auto;
+}
+
+.Small-Activity-table table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #444444;;
+    color: #fff;
+}
+
+.Small-Activity-table table th, td{
+    padding: 1rem;
+}
+
+.Small-Activity-table table th{
+    background-color: #555555;
+}
+
+.Small-Activity-table{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .heading-text{
+        font-size: 1.5em;
+    }
+
+    .Activity-table{
+        display: none;
+    }
+    
+    .Small-Activity-table{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .Small-Activity-table{
+        width: 100%;
+    }
+
+    .container{
+        margin-top: 15%;
+    }
+    
 }
 
 
