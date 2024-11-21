@@ -142,6 +142,30 @@ a {
     display: none;
 }
 
+#courseConstructionSection{
+    text-align: left;
+}
+
+#courseConstructionSection th{
+    background-color: #162957;
+    color: white;
+}
+
+#courseConstructionSection td{
+    background-color: #e9e9ed;
+}
+
+#courseConstructionSection a{
+    font-weight: bold;
+    text-decoration: underline 2px solid #162957;
+}
+
+#courseConstructionSection a:hover{
+    text-decoration: underline 2px solid #007EA7;
+}
+
+
+
 .active, .collapsible:hover {
     background-color: #162957;
     color:white;
