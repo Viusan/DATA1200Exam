@@ -580,21 +580,26 @@ top: 25%;
 }
 
 /* Css for the activity page */
+
+/* Added style for the heading text */
 .heading-text{
     display: flex;
     justify-content: center;
     font-size: 2.5em;
 }
 
+
 .heading-text h1{
-    margin: 0;
-    margin-top: 2%;
+    margin: 0; /* Removes margin*/
+    margin-top: 2%; /* Adds space over the heading */
 }
 
+/* Removes the radio buttons for the image slider */
 .radio{
-    display: none;
+    display: none; /* Its still functional but not visible */
 }
 
+/* The container for the image slider */
 .container{
     position: relative;
     max-width: 800px;
