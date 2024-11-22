@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>activity-page</title>
 </head>
-<body onload="loadFirstSlide()">
+<body onload="loadFirstSlide()"> <!-- calls the javascript funcion that loades the first image when the page loads -->
     
     <header>
         <button id="menuIcon" class="menu-icon"onclick="toggleMenu()">&#9776;</button> <!-- This are the threee lines that indicates the menu-->
@@ -20,18 +20,21 @@
         </nav>
 
         <main>
+        <!--The heading text for the site-->
         <article class="heading-text">
             <h1>Activity page</h1>
         </article>
 
+        <!-- The image slider section-->
         <article class="container">
             <section class="slider">
+                <!--Different radio buttons navigate between the different slides-->
                 <input type="radio" class="radio" name="images" id="radio-1">
                 <input type="radio" class="radio" name="images" id="radio-2">
                 <input type="radio" class="radio" name="images" id="radio-3">
                 <input type="radio" class="radio" name="images" id="radio-4">
         
-    
+                <!--The section for the first slide-->
                 <section class="slide" id="slide-1">
                     <!-- kilde: Oleksandr P, https://www.pexels.com/photo/woman-looking-at-hot-air-balloons-3278215/ -->
                     <img src="Images/travelling.jpg" alt="a picture of a women in the mountains">
@@ -39,7 +42,8 @@
                         <h1>Exploring nature</h1>
                     </section>
                 </section>
-    
+                
+                <!--The section for the second slide-->
                 <section class="slide" id="slide-2">
                     <!-- kilde: pixabay, https://www.pexels.com/photo/soccer-ball-on-grass-field-during-daytime-46798/ -->
                     <img src="Images/football.jpg" alt="a picture of a football in a stadium">
@@ -47,7 +51,8 @@
                         <h1>Football</h1>
                     </section>
                 </section>
-    
+                
+                <!--The section for the third slide-->
                 <section class="slide" id="slide-3">
                     <!-- kilde: pixabay,https://www.pexels.com/photo/white-gaming-console-on-wooden-surface-275033/ -->
                     <img src="Images/game.jpg" alt="a picture of a playstation controller">
@@ -56,6 +61,7 @@
                     </section>
                 </section>
 
+                <!--The section for the fourth slide-->
                 <section class="slide" id="slide-4">
                     <!-- kilde: Lisa Fotios, https://www.pexels.com/photo/close-up-photo-of-person-holding-book-1485114/ -->
                     <img src="Images/reading.jpg" alt="a picture of somoene reading">
@@ -63,7 +69,8 @@
                         <h1>Reading</h1>
                     </section>
                 </section>
-    
+                
+                <!--Radio buttons for navigating between slides-->
                 <section class="dots">
                     <label for="radio-1" id="label1"></label>
                     <label for="radio-2" id="label2"></label>
@@ -74,18 +81,22 @@
             </section>
         </article>
 
+        <!--The text section about each hobbies-->
         <article class="text-section">
             <h2>Hobbies/Interests</h2>
             
+            <!--Text is presented in a table manner-->
             <section class="Activity-table">
             <table>
                 <tr>
+                    <!-- header for activites -->
                     <th><h3>Exploring nature</h3></th>
                     <th><h3>Football</h3></th>
                     <th><h3>Gaming</h3></th>
                     <th><h3>Reading</h3></th>
                 </tr>           
                 <tr>
+                    <!-- The description for each activity -->
                     <td>
                         Going out for an walk in the nature clears out my mind and feels peacuful. its calming and a place where i can get some fresh air and admire the wonderful sight.
                         You can plan your routes on: <a href="https://www.alltrails.com/">Alltrails.com</a>
@@ -113,7 +124,7 @@
             </table>
         </section>
 
-
+        <!--Smaller table for screens that are suitable for mobile or smaller screens-->
         <section class="Small-Activity-table">
             <table>
                 <tr>
@@ -138,7 +149,7 @@
                     <th>Reading</th>
                     <td>When i want to relax or escape to a different world. I will read. I enjoy reading many genres but i am more into fantasy books. Reading makes me calmer and inspiring.
 
-                        Here ypu can discover books: <a href="https://www.goodreads.com/">Goodreads.com</a>
+                        Here you can discover books: <a href="https://www.goodreads.com/">Goodreads.com</a>
                         
                         Here are some free digital books you can check out: <a href="https://www.gutenberg.org/">Gutenberg.org</a></td>
                 </tr>
@@ -149,6 +160,6 @@
 
         </main>
     </header>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--Links to a external Javascript file -->
 </body>
 </html>
