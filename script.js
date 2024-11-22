@@ -2,11 +2,9 @@
 function toggleMenu(){
     var menu = document.getElementById("nav-menu");
     if (menu.classList.contains("hidden")) {
-        menu.classList.remove("hidden");
-        document.getElementById("menuIcon").style.color = "white"; 
+        menu.classList.remove("hidden"); 
     } else {
         menu.classList.add("hidden");
-        document.getElementById("menuIcon").style.color = "black"; 
 
     }
 }
