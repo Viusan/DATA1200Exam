@@ -2,10 +2,13 @@
 function toggleMenu(){
     var menu = document.getElementById("nav-menu");
     if (menu.classList.contains("hidden")) {
-        menu.classList.remove("hidden"); 
+        menu.classList.remove("hidden");
+        document.getElementById("osloMetLogo").src = "Images/indexPage/oslometLogoWhite.png";
+        document.getElementById("osloMetLogoContainer").style.backgroundColor = '#162957';
     } else {
         menu.classList.add("hidden");
-
+        document.getElementById("osloMetLogo").src = "Images/indexPage/oslometLogo.png";
+        document.getElementById("osloMetLogoContainer").style.backgroundColor = '#fff'; 
     }
 }
 

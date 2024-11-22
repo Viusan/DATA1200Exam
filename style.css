@@ -23,6 +23,11 @@ a {
     color: black;
 }
 
+/*OsloMet Logo*/
+#osloMetLogo{
+    height: 100px;
+}
+
 /*Navigation menu*/
 #nav-menu.hidden {
     display: none;/* this hides the menu whenn the page is loading*/
@@ -63,6 +68,7 @@ a {
     color: white;
 }
 
+/*Title*/
 #titleCourseContainer{
     margin: 50px 0 0 50px;
 }
