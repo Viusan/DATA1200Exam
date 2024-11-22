@@ -712,6 +712,10 @@ top: 25%;
     background-color: #555555;
 }
 
+.Activity-table a{
+    color: #1E90FF;
+    text-decoration: underline;
+}
 
 .Small-Activity-table{
     overflow-x: auto;
@@ -732,6 +736,11 @@ top: 25%;
     background-color: #555555;
 }
 
+.Small-Activity-table a{
+    color: #1E90FF;
+    text-decoration: underline;
+}
+
 .Small-Activity-table{
     display: none;
 }
@@ -739,6 +748,7 @@ top: 25%;
 @media only screen and (max-width: 800px) {
     .heading-text{
         font-size: 1.5em;
+        margin-top: 25%;
     }
 
     .Activity-table{
@@ -757,6 +767,10 @@ top: 25%;
 
     .container{
         margin-top: 15%;
+    }
+
+    .caption h1{
+        font-size: 0.5em;
     }
     
 }
