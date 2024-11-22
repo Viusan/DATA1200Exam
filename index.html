@@ -10,7 +10,7 @@
 <body>
     <header>
         
-    <article id="osloMetLogoContainer">
+    <article id="osloMetLogoContainer"><!--This article contains the OsloMet Logo-->
         <img id="osloMetLogo" src="Images/indexPage/oslometLogo.png" alt="Logo of OsloMet">
     </article>
         <button id="menuIcon" class="menu-icon"onclick="toggleMenu()">&#9776;</button> <!-- This are the threee lines that indicates the menu-->
@@ -24,13 +24,13 @@
         </nav>
     </header>
 <main>
-    <article id="titleCourseContainer">
+    <article id="titleCourseContainer"><!--This is main title for the webpage-->
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
         <p>Bachelorprogram</p>
     </article>
 
     <article>
-        <section id="courseInformationSection">
+        <section id="courseInformationSection"><!--Cotnainer of information about the course, layed out in a table-->
             <table id="courseInformationTable">
                 <thead>
                     <tr>
@@ -56,7 +56,7 @@
                 </tbody>
             </table>
         </section>
-        <section id="smallCourseInformationSection">
+        <section id="smallCourseInformationSection"><!--This is another table which is displayed when you are on a smaller screen, this is due to better responsiveness for the page-->
             <table id="smallCourseInformationTable">
                 <tr>
                     <th>Studiested</th>
@@ -88,14 +88,14 @@
         </section>
     </article>
 
-    <article id="randomTextContainer">
+    <article id="randomTextContainer"><!--Span is just to highlight a specific area for visual design.-->
         <p>Få innsikt i <span class="highlightedTxt">matematiske modeller og datadrevne metoder</span> som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
     </article>
 
     <article id="collapsibleContainer"><!--Code inspired from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible-->
         <section>
-            <button type="button" class="collapsible">Opptakskrav og poeng</button>
-            <section class="content">
+            <button type="button" class="collapsible">Opptakskrav og poeng</button><!--These are collapsible contents, where when the button is pressed it will show new content-->
+            <section class="content"><!--All of the section with the class content will remain hidden until the button "collapsible" is pressed-->
                 <p>For å søke på dette programmet må du ha</p>
                 <ul id="collapsableUlList">
                     <li><a id="generalLinkDesign"href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/">generell studiekompetanse (samordnaopptak.no)</a> eller <a id="generalLinkDesign" href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">oppfylle kravene til realkompetanse</a></li>
@@ -787,7 +787,7 @@
         <article id="locationAndQuestionWrapper">
             <section id="studiested">
                 <h2>Studiested</h2>
-                <i class="arrow right"></i><a href="https://www.oslomet.no/om/studiested-pilestredet">Studiested Pilstredet</a>
+                <i class="arrow right"></i><a href="https://www.oslomet.no/om/studiested-pilestredet">Studiested Pilstredet</a><!-- the "i" element is a visual aspect which displays a triangle-->
             </section>
     
             <section id="questionAboutEdu">
@@ -796,7 +796,7 @@
             </section>
         </article>
 
-        <section id="fagligLederSection">
+        <section id="fagligLederSection"><!--Information about the course leader-->
             <h2>Faglig leder</h2>
             <a href="https://www.oslomet.no/om/ansatt/krhel3944/">
                 <!--Image is from OsloMet mattematisk modelering website: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap?utm_campaign=rekrutteringskampanje2023&utm_medium=ad&utm_source=betaltsok-->
@@ -811,7 +811,7 @@
         </section>
     </article>
 
-    <article id="otherCourseContainer">
+    <article id="otherCourseContainer"><!--Article container for other courses that are displayed on the page-->
         <h2>Du er kanskje også interessert i disse?</h2>
         <ul id="otherCourseUlElement">
             <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">
@@ -912,18 +912,18 @@
         </ul>
     </article>
 
-    <article id="studentHistorierContainer">
+    <article id="studentHistorierContainer"><!--Container for "student historier"-->
         <section>
             <h2 id="studentHistorierTitle">Studenthistorier</h2>
             <section id="studentFeatureContent" class="studentHistorierSection">
-                <section id="studentHistorierTextSection">
+                <section id="studentHistorierTextSection"><!--Section for text only-->
                     <a href="https://www.oslomet.no/studier/studenthistorier?student_story=147" id="tekOgDes">Teknologi og design</a>
                     <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">
                         <h3>Spå fremtiden med matematikk og datavitenskap</h3>
                         <p> Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
                     </a>    
                 </section>
-                <section id="studentHistorierImageContainer" class="studentHistorierSection">
+                <section id="studentHistorierImageContainer" class="studentHistorierSection"><!--Section for the image-->
                     <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">
                         <!--Image is from OsloMet mattematisk modelering website: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap?utm_campaign=rekrutteringskampanje2023&utm_medium=ad&utm_source=betaltsok-->
                         <img src="Images/indexPage/studentHistorier.jpg" alt="Sebastian og André står i en korridor og smiler. Sebastian holder en lap top">
@@ -932,30 +932,30 @@
             </section>
         </section>
 
-        <section id="moreStoriesLink">
+        <section id="moreStoriesLink"><!--Link for more student stories-->
             <a href="https://www.oslomet.no/studier/studenthistorier">Flere Studenthistorier</a>
         </section>
     </article>
 
-    <article id="newsAlertSectionContainer">
+    <article id="newsAlertSectionContainer"><!--container where you can subcribe to their news-->
         <section id="newsAlertText">
             <p>Hold deg oppdatert på hva som skjer på OsloMet.</p>
         </section>
-        <section id="newsLinkSection">
+        <section id="newsLinkSection"><!--Section for the link to the news-->
             <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev!</a>
         </section>
     </article>
 </main>
 <footer>
-    <article id="footerContainer">
-        <section>
+    <article id="footerContainer"><!--Footer container-->
+        <section><!--Quick information about the university-->
             <h2>OSLO METROPOLITAN UNIVERSITY</h2>
             <p>Postboks 4, St. Olavs plass</p>
             <p>0130 Oslo</p>
             <p>Tlf.: 67 23 50 00 </p>
             <a id="contactUsAtag" href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
         </section>
-        <section id="footerOtherLinks">
+        <section id="footerOtherLinks"><!--Links to relevant pages for students-->
             <ul>
                 <li><a href="http://127.0.0.1:5500/index.html">English</a></li>
                 <li><a href="https://www.oslomet.no/alumni">Almuni</a></li>
@@ -970,7 +970,7 @@
                 <li><a href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a></li>
             </ul>
         </section>
-        <section id="socialsContainer">
+        <section id="socialsContainer"><!--Container to OsloMet socials-->
             <!--Image downlaoded from https://about.meta.com/brand/resources/facebook/logo/-->
             <a href="https://www.facebook.com/oslomet/"><img src="Images/indexPage/logos/facebook.png" alt="facebook logo" class="socialMediaLogos">Facebook</a>
             <!--Image downloaded from https://about.x.com/en/who-we-are/brand-toolkit-->
