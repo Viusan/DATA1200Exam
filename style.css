@@ -146,6 +146,17 @@ a {
 
 .content{
     display: none;
+    margin-bottom: 10px;
+}
+
+#collapsableUlList{
+    list-style-type: circle;
+    padding: 20px;
+}
+
+#courseRequirementsList a, #generalLinkDesign{
+    font-weight: bold;
+    text-decoration: underline 2px solid #007EA7;
 }
 
 #courseConstructionSection{
