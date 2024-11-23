@@ -23,6 +23,11 @@ a {
     color: black;
 }
 
+/*OsloMet Logo*/
+#osloMetLogo{
+    height: 100px;
+}
+
 /*Navigation menu*/
 #nav-menu.hidden {
     display: none;/* this hides the menu whenn the page is loading*/
@@ -63,6 +68,7 @@ a {
     color: white;
 }
 
+/*Title*/
 #titleCourseContainer{
     margin: 50px 0 0 50px;
 }
@@ -77,19 +83,33 @@ a {
 }
 
 /*Course Information*/
-#courseInformationContainer{
+#courseInformationSection{
     display: flex;
-    flex-wrap: wrap; /*content wraps around*/  
-    margin: 0 50px 0 50px; 
-}
-
-#courseInformationContainer section{
+    justify-content: center;
     margin: 10px;
-    width: 250px;/*defining how big each element can be*/
-    border-top: 3px solid #007EA7;
-    box-shadow: 10px 10px 5px lightblue;
 }
 
+#courseInformationTable{
+    width: 100%;
+}
+
+#courseInformationTable th, #courseInformationTable td{
+    border: solid 1px black;
+    padding: 20px;
+}
+
+#courseInformationTable th{
+    background-color: #162957;
+    color: white;
+}
+
+#courseInformationTable td, #smallCourseInformationTable td{
+    background-color: #e9e9ed;
+}
+
+#smallCourseInformationSection{
+    display: none;
+}
 
 /*Random Text*/
 #randomTextContainer{
@@ -126,7 +146,47 @@ a {
 
 .content{
     display: none;
+    margin-bottom: 10px;
 }
+
+#collapsableUlList{
+    list-style-type: circle;
+    padding: 20px;
+}
+
+#courseRequirementsList a, #generalLinkDesign{
+    font-weight: bold;
+    text-decoration: underline 2px solid #007EA7;
+}
+
+#courseConstructionSection{
+    text-align: left;
+}
+
+#courseConstructionSection table{
+    table-layout: fixed;
+}
+
+#courseConstructionSection th{
+    background-color: #162957;
+    color: white;
+}
+
+#courseConstructionSection td{
+    background-color: #e9e9ed;
+    width: 33%;
+}
+
+#courseConstructionSection a{
+    font-weight: bold;
+    text-decoration: underline 2px solid #162957;
+}
+
+#courseConstructionSection a:hover{
+    text-decoration: underline 2px solid #007EA7;
+}
+
+
 
 .active, .collapsible:hover {
     background-color: #162957;
@@ -290,6 +350,37 @@ a {
     opacity: 0.9
 }
 
+/*Subcribe to get notification section*/
+#newsAlertSectionContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #162957;
+    border-bottom: 1px solid white;
+    padding: 25px;
+    margin-top: 100px;
+}
+
+
+#newsAlertText{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#newsLinkSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+#newsLinkSection a{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
 /*Footer Section*/
 #footerContainer{
     display: flex;
@@ -311,6 +402,10 @@ a {
 
 #footerContainer a:hover{
     text-decoration: underline;/*Gives underline when hovering over element*/
+}
+
+#contactUsAtag{
+    font-weight: bold;
 }
 
 #footerOtherLinks ul li{
@@ -338,6 +433,31 @@ a {
 }
 
 @media only screen and (max-width: 800px) {/*media breakpoint to help with responsivness when the screen becomes smaller*/
+    #courseInformationSection{
+        display: none;
+    }
+
+    #smallCourseInformationSection{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin: 10px;
+    }
+
+    #smallCourseInformationTable{
+        width: 100%;
+    }
+
+    #smallCourseInformationTable th, #smallCourseInformationTable td{
+        border: solid 1px black;
+        padding: 20px;
+    }
+
+    #smallCourseInformationTable th{
+        background-color: #162957;
+        color: white;
+    }
+    
     #programContacts{
         flex-direction: column;
     }
@@ -360,6 +480,10 @@ a {
     }
 
     #studentFeatureContent{
+        flex-flow: column;
+    }
+
+    #newsAlertSectionContainer{
         flex-flow: column;
     }
 
@@ -465,16 +589,25 @@ transition-duration: 0.4s;
 
 /* Css for the activity page */
 
+/* Added style for the heading text */
 .heading-text{
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: 2.5em;
 }
 
+
+.heading-text h1{
+    margin: 0; /* Removes margin*/
+    margin-top: 2%; /* Adds space over the heading */
+}
+
+/* Removes the radio buttons for the image slider */
 .radio{
-    display: none;
+    display: none; /* Its still functional but not visible */
 }
 
+/* The container for the image slider */
 .container{
     position: relative;
     max-width: 800px;
@@ -513,7 +646,7 @@ transition-duration: 0.4s;
     left: 5%;
     top: 5%;
     color: #fff;
-    font-size: 40px;
+    font-size: 1.5em;
     transition: 1.5s;
 }
 
@@ -528,10 +661,11 @@ transition-duration: 0.4s;
 .dots label{
     width: 15px;
     height: 15px;
-    background-color: white;
+    background-color: #fff;
+    border: 1px solid #000;
     margin: 0 10px;
     border-radius: 50%;
-    opacity: 0.3;
+    opacity: 0.9;
     cursor: pointer;
 }
 
@@ -563,22 +697,99 @@ transition-duration: 0.4s;
     font-size: 80px;
 }
 
-.links{
+.text-section h2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    font-size: 25px;
+    padding: 2rem;
+    background-color: #a1a1a1;
+    color: #fff;
 }
 
-.les-mer a{
-    text-decoration: none;
-    color: #162957;
-    font-size: 20px;
+.Activity-table{
+    overflow-x: auto;
 }
 
-.tekst-seksjon {
-    padding: 20px;
-    margin-top: 40%;
-    background: #f5f5f5;
+.Activity-table table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #444444;;
+    color: #fff;
 }
+
+.Activity-table table th, td{
+    padding: 1rem;
+}
+
+.Activity-table table th{
+    background-color: #555555;
+}
+
+.Activity-table a{
+    color: #1E90FF;
+    text-decoration: underline;
+}
+
+.Small-Activity-table{
+    overflow-x: auto;
+}
+
+.Small-Activity-table table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #444444;;
+    color: #fff;
+}
+
+.Small-Activity-table table th, td{
+    padding: 1rem;
+}
+
+.Small-Activity-table table th{
+    background-color: #555555;
+}
+
+.Small-Activity-table a{
+    color: #1E90FF;
+    text-decoration: underline;
+}
+
+.Small-Activity-table{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .heading-text{
+        font-size: 1.5em;
+        margin-top: 25%;
+    }
+
+    .Activity-table{
+        display: none;
+    }
+    
+    .Small-Activity-table{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .Small-Activity-table{
+        width: 100%;
+    }
+
+    .container{
+        margin-top: 15%;
+    }
+
+    .caption h1{
+        font-size: 0.5em;
+    }
+    
+}
+
+
+
 
 
 
