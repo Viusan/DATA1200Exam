@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Bruk av Github for effektiv samarbeid</title>
+    <style>
+
+        
+    </style>
 </head>
 <body class="github-page">
 <header>
-    <section class="menu-icon"onclick="toggleMenu()">&#9776;</section> <!-- This are the threee lines that indicates the menu-->
+    <button class="menu-icon"onclick="toggleMenu()">&#9776;</button> <!-- This are the threee lines that indicates the menu-->
     <nav id="nav-menu"   class="hidden"> <!-- &9776  is a special code that shows the hamburgermeny-->
         <ul> 
             <li><a href="index.html">Hjem</a></li>
@@ -18,32 +22,72 @@
         </ul>
     </nav>
 </header>
-<section class="cat-container ">
-    <img src="Images/githublogo.png" alt="GitHub-logo" class="logo blink"> 
-<section class="github-section">
-    
-    <section class="center-content">
-    <h2>Bruk av Github for effektiv samarbeid</h2>
-    
-        <h3>Introduksjon til Git-hub</h3>
-        <p> Github er en verktøy for versjonskontroll og temarbeid som bidrar til å strukturere kodeprojekter systematisk.
-         Den har vært en sentral knutepunkt for alle gruppemedlemmer til å samarbeidet enkelt og effektivt.</p>
-        
-     
-<h4>Fordeler med GitHub</h4>
+<section class="image-container">
+    <img src="Images/githubpage/githublogo.png" alt="GitHub-logo" class="logo"> 
+
+</section>
+    <section class="introduksjon">
+        <h1>Bruk av Github for effektiv samarbeid</h1>
+        <article class="kort">
+            <h2>Introduksjon til Git-hub</h2>
+            <p> Github er en verktøy for versjonskontroll og temarbeid som bidrar til å strukturere kodeprojekter systematisk.Den har vært en sentral knutepunkt for alle gruppemedlemmer til å samarbeidet enkelt og effektivt.</p>
+        </article>
+    </section>
+   <main>
+</main>
 <section class="fordeler">
-   <h3>Versjonskontroll</h3>
-   <p>Github har gitt oss en kraftig versjonskontrollsystem gjennom hele projektet. Dette har gitt hos muligheten til å spore og lagre endringer som en "commit" når noen utførte en endring i projektet. </p>
+    <article class="kort">
+        <h3>Versjonskontroll og Kommunikasjon</h3>
+   <p>Github har en kraftig versjonskontrollsystem som gir oss muligheten til å spore og lagrer endringer som en "commit". </p>
+  
+    </article>
 
-    <h5>Kommunikasjon</h5>
-<p>Ved hjelp av "commit" kunne vi lett se og forstå hva som ble endret i projektet. Vi opptaderte hverandre om projektet ved å legge til en en kort besrkivelser om  hva som ble endret og hvem som utførte endringene. </p>
+</section>
+<div class="row">
+    <div class="column">
+        <img src="Images/githubpage/committ history .png" alt="commit endringer">
+        <div class="desc">Bildet viser et eksempel på hvordan vi samarbeidet og kommuniserte gjennom hele projektet</div>
+    </div>
+    <div class="column">
+        <img src="Images/githubpage/small changes.png" alt="endringer små">
+        <div class="desc">Et annet eksempel på små endringer vi har gjort underveis</div>
+    </div>
+</div>
+<article class="kort">
     <h5>Temarbeid</h5>
-<p>GitHub har gjort det mulig for oss å arbeidet med projektet samtidig uten å overlappe elller kollidere med hverandre. Vi kunne jobbe parallet sammenn ved hjelp av "branches" noe som forsterket våres samarbeidsevner og kvalitet.</p>
+<p>Ved hjelp av "branches" kunne vi jobbe parallet sammen uten å overlappe hverandre.Samtidig opplevde vi utfordringer som ved merge-konfliker under samarbeidet. Vi brukte github til å gjennømføre merge prosesser mellom branches.</p>
     
+</article>
+<div class="row">
+    <div class="column">
+        <img src="Images/githubpage/commit merge conflict.png" alt="merge-konflikt">
+        <div class="desc">Bildet viser merge-prosessen i Github. Det inkludrer en pull request, merge -commits og en konfliktløsning.Under merge-prosessen kan vi se at det oppsto en konflikt</div>
+    </div>
+    <div class="column">
+        <img src="Images/githubpage/håndtering av merge conflict.png" alt="håndtering-merge konflikt">
+        <div class="desc">  Dette skjedde fordi to ulike teamedlemmer hadde opptadert samme del av koden samtidig.Vi brukte Githubs merge-verktøy og så at konflikten var knyttet til opptaderinger av menyen.Vi diskuterte endringene og fullførte merge -prosessen med en opptadert struktur</div>
+    </div>
+</div>
+    
+   </main>
+    
+<footer>
+    <article id="footerContainer">
+        <section>
+            <h2>OSLO METROPOLITAN UNIVERSITY</h2>
+            <p>Postboks 4, St. Olavs plass</p>
+            <p>0130 Oslo</p>
+            <p>Tlf.: 67 23 50 00 </p>
+            <a href="">Kontakt oss</a>
+        </section>
+        <section id="socialsContainer">
+            <a href=""><img src="Images/logos/facebook.png" alt="facebook logo" class="socialMediaLogos">Facebook</a>
+            <a href=""><img src="Images/logos/twitter.png" alt="twitter logo" class="socialMediaLogos">Twitter(X)</a>
+            <a href=""><img src="Images/logos/linkedin.png" alt="linkedin logo" class="socialMediaLogos">LinkedIn</a>
+            <a href=""><img src="Images/logos/instagram.png" alt="instagram logo" class="socialMediaLogos">Instagram</a>
+        </section>
+</footer>
 
-</section>
-</section>
-</section>
 <script src="script.js"></script>
 </body>
 </html>
