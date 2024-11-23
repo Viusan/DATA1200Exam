@@ -1,11 +1,12 @@
+/*default attributes for the website*/
 body { 
     font-family: Arial, sans-serif;/*arial as default font*/
     margin: 0;
     padding: 0; 
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;/*make the page scroll smoothly to that section instead of jumping directly*/
 }
 
-nav{
+nav{/*Styling the navigation section*/
     top: 0;
     left: 0;
     right: 0;
@@ -68,46 +69,47 @@ a {
     color: white;
 }
 
+/**-----INDEX PAGE-----**/
 /*Title*/
 #titleCourseContainer{
-    margin: 50px 0 0 50px;
+    margin: 50px 0 0 50px;/*gives space to the top and bottom*/
 }
 
-#titleCourseContainer h1{
+#titleCourseContainer h1{/*Text styling*/
     font-size: 2.5em;
     margin-bottom: 0;
 }
 
-#titleCourseContainer p{
+#titleCourseContainer p{/*Text styling*/
     font-size: 1.5em;
 }
 
 /*Course Information*/
-#courseInformationSection{
+#courseInformationSection{/*Centering information content*/
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-#courseInformationTable{
+#courseInformationTable{/*Making so it takes up as much space as it can*/
     width: 100%;
 }
 
-#courseInformationTable th, #courseInformationTable td{
+#courseInformationTable th, #courseInformationTable td{/*Styling table*/
     border: solid 1px black;
     padding: 20px;
 }
 
-#courseInformationTable th{
+#courseInformationTable th{/*Styling table*/
     background-color: #162957;
     color: white;
 }
 
-#courseInformationTable td, #smallCourseInformationTable td{
+#courseInformationTable td, #smallCourseInformationTable td{/*Styling table*/
     background-color: #e9e9ed;
 }
 
-#smallCourseInformationSection{
+#smallCourseInformationSection{/*Hiding this table untill it activates in media query for responsivnes*/
     display: none;
 }
 
@@ -123,9 +125,9 @@ a {
 }
 
 .highlightedTxt{
-    background-image: linear-gradient(#162957, blue);
-    color: transparent;
-    background-clip: text;
+    background-image: linear-gradient(#162957, blue);/*Giving gradient colour to a specific part of a text*/
+    color: transparent;/*Attributes so gradient works*/
+    background-clip: text;/*Attributes so gradient works*/
 }
 
 /*Collapsable menu*/
@@ -145,12 +147,12 @@ a {
 }
 
 .content{
-    display: none;
+    display: none;/*Hides content and is activated in javascript*/
     margin-bottom: 10px;
 }
 
 #collapsableUlList{
-    list-style-type: circle;
+    list-style-type: circle;/*Giving the list circle points since we have by default removed styling for ul/li elements*/
     padding: 20px;
 }
 
@@ -159,12 +161,12 @@ a {
     text-decoration: underline 2px solid #007EA7;
 }
 
-#courseConstructionSection{
+#courseConstructionSection{/*Aligning the text to start from the left in a table*/
     text-align: left;
 }
 
 #courseConstructionSection table{
-    table-layout: fixed;
+    table-layout: fixed;/*more efficient method for rendering the table, calculates the width of each column based on the first row*/
 }
 
 #courseConstructionSection th{
@@ -182,13 +184,11 @@ a {
     text-decoration: underline 2px solid #162957;
 }
 
-#courseConstructionSection a:hover{
+#courseConstructionSection a:hover{/*decoration when hovered*/
     text-decoration: underline 2px solid #007EA7;
 }
 
-
-
-.active, .collapsible:hover {
+.active, .collapsible:hover {/*decoration when hovered*/
     background-color: #162957;
     color:white;
 }
@@ -205,18 +205,18 @@ a {
 }
 
 #studiested a, #questionAboutEdu a{
-    text-decoration: underline;
+    text-decoration: underline;/*underline decoration*/
     padding: 16px 32px;
 }
 
-#studiested a:hover, #questionAboutEdu a:hover{
+#studiested a:hover, #questionAboutEdu a:hover{/*decoration when hovered*/
     color: #007EA7;
 }
 
 .arrow {/*Styling a triangle*/
     border: solid black;
     border-width: 0 3px 3px 0;
-    display: inline-block;
+    display: inline-block;/*placed in line with other inline elements, meaning they don't force a new line after them */
     padding: 3px;
 }
 
@@ -227,7 +227,7 @@ a {
 
 #fagligLederSection a{
     display: flex;
-    flex-flow: row;
+    flex-flow: row;/*Puts content in a row*/
     align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -238,7 +238,7 @@ a {
     margin-right: 10px;
 }
 
-#fagligLederTextSection p:hover{/*NEEDS MORE WORK*/
+#fagligLederTextSection p:hover{
     text-decoration: underline;
 }
 
@@ -246,6 +246,7 @@ a {
 #otherCourseContainer{
     margin: 0 20px 70px 20px;
 }
+
 #otherCourseContainer h2{
     font-size: 2em;
 }
@@ -274,7 +275,7 @@ a {
     margin: 0 10px 0 0;
     border-top: 1px solid #007EA7;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column wrap;/*Sets content as column*/
 }
 
 /*StudentHistorier Section*/
@@ -288,7 +289,7 @@ a {
 
 #studentFeatureContent{
     display: flex;
-    box-sizing: border-box;
+    box-sizing: border-box;/* total width and height will not increase beyond the values you specify*/
     color: white;
 }
 
@@ -313,20 +314,20 @@ a {
 }
 
 #studentHistorierImageContainer{
-    overflow: hidden;
+    overflow: hidden;/*if it goes beyond the html page it will not be shown, this doesnt break the responsivness*/
 }
 
 #studentHistorierImageContainer a img{
     display: block;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;/*scales to fit within its container while maintaining its aspect ratio*/
     top: 0;
     transition: transform .2s; /* Animation */
 }
 
 #studentHistorierImageContainer a img:hover{
-    transform: scale(1.1)
+    transform: scale(1.1)/*this is what will happen when the image is hovered, and it combined with the transition code above*/
 }
 
 #moreStoriesLink{
@@ -342,36 +343,35 @@ a {
     height: 75px;
     width: 50%;
     align-content: center;
-    transition: 0.3s;
+    transition: 0.3s;/*transition will take 0.3s*/
     opacity: 1;
 }
 
 #moreStoriesLink a:hover{
-    opacity: 0.9
+    opacity: 0.9/*changes opacity when hovered*/
 }
 
 /*Subcribe to get notification section*/
 #newsAlertSectionContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;/*equally spaces the contents inside*/
     background-color: #162957;
     border-bottom: 1px solid white;
     padding: 25px;
     margin-top: 100px;
 }
 
-
 #newsAlertText{
     color: white;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: bold;/*makes text thicker*/
 }
 
-#newsLinkSection{
+#newsLinkSection{/*centering content horizontally and vertically*/
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;/*normally when you center with justify content and align items, it will only do so with the container not the text. Text-align fixes this problem*/
     background-color: black;
 }
 
@@ -386,8 +386,8 @@ a {
     display: flex;
 }
 
-#footerContainer{/*i dont know if grid is a good sollution*/
-    display: grid;
+#footerContainer{
+    display: grid;/*giving the fotter grid so it can be flexible when it comes to responsivness, display flex would also work but this is just to showcase another method/sollution to responsiveness*/
     grid-template-columns: auto auto auto;
     background-color: #162957;
     color: white;
@@ -405,7 +405,7 @@ a {
 }
 
 #contactUsAtag{
-    font-weight: bold;
+    font-weight: bold;/*makes the text thicker*/
 }
 
 #footerOtherLinks ul li{
@@ -434,7 +434,7 @@ a {
 
 @media only screen and (max-width: 800px) {/*media breakpoint to help with responsivness when the screen becomes smaller*/
     #courseInformationSection{
-        display: none;
+        display: none;/*hides the previous table to show the one more fitting for mobile screens*/
     }
 
     #smallCourseInformationSection{
@@ -559,7 +559,7 @@ transition-duration: 0.4s;
 .column img{
     height: auto;
     max-width: 100%;
-   border-radius: 8px;
+    border-radius: 8px;
 
 }
 .row{
@@ -568,8 +568,6 @@ transition-duration: 0.4s;
     gap: 20px;
     margin: 20px;
 }
-
-
 
 @media(max-width:768px){
     .introduksjon h1 h2 h3 h4 h5{
@@ -585,7 +583,6 @@ transition-duration: 0.4s;
         flex-direction: column;
     }
 }
-
 
 /* Css for the activity page */
 
