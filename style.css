@@ -640,7 +640,7 @@ transition-duration: 0.4s;
 }
 
 /* A class for each and indvidual slides */
-.slide{
+.img-slide{
     position: absolute;
     width: 100%; /* Max width of the container*/
     height: 100%; /* Max height of the container */
@@ -650,7 +650,7 @@ transition-duration: 0.4s;
 }
 
 /* Specifies the css of each image*/
-.slide img{
+.img-slide img{
     width: 100%; /* Image fill the container*/
     height: 100%;
     object-fit: cover; /* It follows the aspect ratio and covers the container*/
