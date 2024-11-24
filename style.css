@@ -558,7 +558,7 @@ a {
     color: #424242;
 
 }
-.column{
+.column{  /*CSS code from .comlun to .row is also used in the images for the accesibility page */
 text-align: center;
 flex: 1;
 background: #162957;

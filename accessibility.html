@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <section class="menu-icon"onclick="toggleMenu()">&#9776;</section> <!-- This are the threee lines that indicates the menu-->
+        <button class="menu-icon"onclick="toggleMenu()">&#9776;</button> <!-- This are the threee lines that indicates the menu-->
         <nav id="nav-menu"   class="hidden"> <!-- &9776  is a special code that shows the hamburgermeny-->
             <ul> 
                 <li><a href="index.html">Hjem</a></li>
@@ -83,13 +83,48 @@
             <p>Selv om automatiserte tester er nyttige, er det viktig at vi utfører manuelle tester for å sikre fullstendig tilgjengelighet. Vi er forpliktet til å kontinuerlig forbedre nettstedets tilgjengelighet og sørge for at det er brukervennlig for alle.</p>
         </section>
     </article>
-    
+
     <article class="constructor">
         <section class="con">
             <h2>Skjermbilder</h2>
             <p>Her er noen skjermbilder fra testnettstedet og koden vår som viser hvordan vi har implementert universell utforming:</p>
         </section>
     </article>
+
+    <article class="row">
+        <section class="column">
+            <img src="Images/accessibilitypage/image_alt.png" alt="image shows how we have used alt tags">
+            <section class="desc">
+                <p>Bildet viser et eksempel på hvordan vi skriver tekst på alt-tagen for å lese opp bilder for folk som blinde.</p>
+        </section>
+    </article>
+
+    <article class="row">
+        <section class="column">
+            <img src="Images/accessibilitypage/kontrast.png" alt="image shows the usage of color contrast in the website"> 
+            <section class="desc">
+                <p>Bildet viser et eksempel på hvordan vi har benyttet oss av sterke fargekonraster mellom tekst og bakgrunn for å gjøre nettsiden brukervennlig.</p>
+        </section>
+    </article>
+
+    
+    <article class="row">
+        <section class="column">
+            <img src="Images/accessibilitypage/Colorblind_test.png" alt="image shows the usage of color contrast in the website"> 
+            <section class="desc">
+                <p>Vi testet ut en extension på firefox som sjekker om nettsiden folk med fargeblindhet kan se siden og dette har vi tatt godt hensyn til med tanke på kontrasten.</p>
+        </section>
+    </article>
+
+    <article class="row">
+        <section class="column">
+            <img src="Images/accessibilitypage/headings.png" alt="image that shows how we have used headings correctly"> 
+            <section class="desc">
+                <p>Vi har brukt headings på rikitg måte ved å for eksempel ha en h2 før h3 i store deler av nettsiden vår for å skape en tråd og tilgjengelighet.</p>
+        </section>
+    </article>
+    
+
 </main>
 <footer>
     <article id="footerContainer"><!--Footer container-->
