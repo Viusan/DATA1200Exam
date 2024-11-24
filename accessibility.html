@@ -28,7 +28,7 @@
     
     <article class="constructor">
         <section class="con">
-            <h2>Valg for universell utforming</h2>
+            <h1>Valg for universell utforming</h1>
             <p>Vi har implementert flere viktige kodingvalg for å forbedre tilgjengeligheten på nettstedet utover det automatiserte tester kan avdekke. For eksempel:</p>
             <ul>
                 <li>Bruk av semantisk HTML for å sikre at skjermlesere kan tolke strukturen på nettstedet.</li>
@@ -40,9 +40,9 @@
     
     <article class="constructor">
         <section class="con">
-            <h2>Manuell kodegjennomgang</h2>
+            <h1>Manuell kodegjennomgang</h1>
             <p>Selv om automatiserte tester gir en god indikasjon på tilgjengelighetsproblemer, har vi også utført manuell kodegjennomgang for å identifisere og rette opp feil som kanskje ikke oppdages av verktøyene. Dette inkluderer testing med forskjellige skjermlesere, nettlesere og enheter for å sikre at nettstedet fungerer godt for alle brukere.</p>
-            <h3>Tastaturtilgjengelighet</h3>
+            <h2>Tastaturtilgjengelighet</h2>
             <p>For å sikre at nettstedet vårt er tilgjengelig for alle brukere, inkludert de som bruker tastatur som sitt primære navigasjonsverktøy, har vi utført manuell testing av tastaturtilgjengeligheten. Dette inkluderer å sjekke følgende:</p>
             <ul>
                 <li>Alle interaktive elementer, som lenker, knapper og skjemafelter, kan nås og aktiveres ved hjelp av tastatur.</li>
@@ -55,7 +55,7 @@
     
     <article class="constructor">
         <section class="con">
-            <h4>Slik ble testene utført </h4>
+            <h1>Slik ble testene utført </h1>
             <p>Følgendde sjekkliste ble laget og fulgt for manuell testing av tastaturtilgjengelighet:</p>
             <ul>
                 <li>Bruk Tab-tasten for å navigere gjennom hele siden.</li>
@@ -69,25 +69,43 @@
     
     <article class="constructor">
         <section class="con">
-            <h3>Eksempler på testing</h3>
+            <h1>Eksempler på testing</h1>
             <p>Her er noen eksempler på problemer vi har identifisert og løst gjennom manuell testing:</p>
             <ul>
                 <li>Problem: Fokusindikatoren var ikke synlig på enkelte lenker / knapper (Meny). Løsning: Vi justerte fra "section" til "button" for å gjøre fokusindikatoren mer synlig.</li>
             </ul>
         </section>
     </article>
+
+    <article class="row">
+        <section class="column">
+            <img src="Images/accessibilitypage/button menu.png" alt="image shows how we added button for the menu for navigating with keyboard"> 
+    </article>
+
+    <article class="constructor">
+        <section class="con">
+            <h1>Automatiserte tester</h1>
+            <p>Vi brukte lighthouse extension på chrome for å se hvor universiell utformet nettsiden vår var. Som følge var dette resultatene våres for et av sidene.</p>
+        </section>
+    </article>
+
+    <article class="row">
+        <section class="column" id="automatisedIMG">
+            <img src="Images/accessibilitypage/automatiserte_test.png" alt="image that shows how we used automatised test"> 
+        </section>
+    </article>
     
     <article class="constructor">
         <section class="con">
-            <h2>Vårt ansvar</h2>
+            <h1>Vårt ansvar</h1>
             <p>Selv om automatiserte tester er nyttige, er det viktig at vi utfører manuelle tester for å sikre fullstendig tilgjengelighet. Vi er forpliktet til å kontinuerlig forbedre nettstedets tilgjengelighet og sørge for at det er brukervennlig for alle.</p>
         </section>
     </article>
 
     <article class="constructor">
         <section class="con">
-            <h2>Skjermbilder</h2>
-            <p>Her er noen skjermbilder fra testnettstedet og koden vår som viser hvordan vi har implementert universell utforming:</p>
+            <h1>Skjermbilder</h1>
+            <p>Her er noen skjermbilder fra koden vår som viser hvordan vi har implementert universell utforming:</p>
         </section>
     </article>
 
@@ -109,10 +127,10 @@
 
     
     <article class="row">
-        <section class="column">
+        <section class="column" id="colorblindIMG">
             <img src="Images/accessibilitypage/Colorblind_test.png" alt="image shows the usage of color contrast in the website"> 
             <section class="desc">
-                <p>Vi testet ut en extension på firefox som sjekker om nettsiden folk med fargeblindhet kan se siden og dette har vi tatt godt hensyn til med tanke på kontrasten.</p>
+                <p>Vi testet ut en extension på firefox som sjekker om folk med fargeblindhet kan se siden og dette har vi tatt godt hensyn til med tanke på kontrasten.</p>
         </section>
     </article>
 
