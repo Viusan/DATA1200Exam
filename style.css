@@ -802,9 +802,7 @@ transition-duration: 0.4s;
 }
 
 
-
-
-
-
-
-
+/*Accessibility page*/
+#introduksjon{
+    margin: 150px;
+}
