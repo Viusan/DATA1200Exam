@@ -492,65 +492,55 @@ a {
     }
 }
 
-/* Github  Page */
-/*style for logo*/
-.logo { height: auto;
-    width: 150px;
-    display: block; /*it shows the element as a block*/
-    background-color: transparent; /* removes backgrounf color*/
-    position: absolute;
-    height: auto;
-    top: 15px; /* placment of the logo from the top*/
-    left: 15px; /*placement of the logo from the left */
-}
-    
-/* style for body element when the class" github page"is active */
+/* Github */
 body.github-page{
-    background-color: #f1f6f9; /* backgroung colour for the page*/
-    display: flex;
-    align-items: center; /* centers content*/
-    flex-direction: column; /* content is arranged in columns*/
+    background-color: #ddeaf0;
 }
-/* style for intro part*/
 .introduksjon{
-    text-align: center; /* center content*/
-    color: #090808;/* set text colour  black*/
-    padding: 0; 
-    margin: 0;
-    line-height: 1.9;/* gives good space between lines for bette reading*/
+    text-align: center;
+    color: #090808;
+    top: 0;
+    padding: 0;
+    margin: 0
 
 }
-/*spesific style for paraghrapes*/
+
+.introduksjon h1 h2 h3 h4 h5{
+    color: #3073c0;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .introduksjon p{
-    margin-bottom: 25px; /* gives space */
+    margin-bottom: 25px;
     margin:auto;
     text-align: center;
-    line-height: 1.8;
 
 
 }
-
+.fordeler{
+    text-align: center;
+    padding: auto;
+}
 .kort{
     background: #f5f5f5;
     text-align: center;
-    max-width: 850px;
-    margin: 25px;
-    justify-content: center;
+    max-width: 500px;
     border-radius: 8px;
-    align-items: center;
     padding: 0;
-    font-size: 1.7em;
-    line-height: 1.5;
+
 
 }
-.kort h2 h3 h4 h5{
-    text-decoration: underline;
+.logo {
+    height: auto;
+    width: 150px;
+    display: block;
+    background-color: transparent;
 }
 .desc{
     font-size: 20px;
     text-align: center;
     color: #424242;
-    max-width: 300px;
 
 }
 .column{
@@ -580,7 +570,7 @@ transition-duration: 0.4s;
 }
 
 @media(max-width:768px){
-    .kort  h2 h3 h4 h5{
+    .introduksjon h1 h2 h3 h4 h5{
         font-size: 2rem;
     }
     .introduksjon p {
@@ -651,7 +641,7 @@ transition-duration: 0.4s;
 }
 
 /* The caption text for each slide*/
-.caption{
+.ImgText{
     position: absolute;
     width: 100%;
     left: 5%; /* To create the text to be placed at the left*/
@@ -662,7 +652,7 @@ transition-duration: 0.4s;
 }
 
 /* A class for the radio buttons in each slides*/
-.dots{
+.buttons{
     width: 100%;
     position: absolute; /* Makes sure that its placed at the bottom of the slider*/
     bottom: 5%; 
@@ -671,7 +661,7 @@ transition-duration: 0.4s;
 }
 
 /* Style for each dot*/
-.dots label{
+.buttons label{
     width: 15px; /* give it a ciricular size*/
     height: 15px;
     background-color: #fff; /* Makes the dot white*/
@@ -683,7 +673,7 @@ transition-duration: 0.4s;
 }
 
 /* Gives them a hover effect*/
-.dots label:hover{
+.buttons label:hover{
     opacity: 1;
 }
 
@@ -705,10 +695,10 @@ transition-duration: 0.4s;
 }
 
 /* The animation for the checked slide*/
-#radio-1:checked ~ #slide-1 .caption,
-#radio-2:checked ~ #slide-2 .caption,
-#radio-3:checked ~ #slide-3 .caption,
-#radio-4:checked ~ #slide-4 .caption {
+#radio-1:checked ~ #slide-1 .ImgText,
+#radio-2:checked ~ #slide-2 .ImgText,
+#radio-3:checked ~ #slide-3 .ImgText,
+#radio-4:checked ~ #slide-4 .ImgText {
     opacity: 1;/* Makes the text visible*/
     top: 7%; /* Makes some adjustment of the text placement*/
     font-size: 80px;
@@ -805,7 +795,7 @@ transition-duration: 0.4s;
         margin-top: 15%;
     }
 
-    .caption h1{
+    .ImgText h1{
         font-size: 0.5em;
     }
     
