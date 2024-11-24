@@ -558,7 +558,7 @@ a {
     color: #424242;
 
 }
-.column{  /*CSS code from .comlun to .row is also used in the images for the accesibility page */
+.column{  /*CSS code from .comlun to .row is also used in the css for the accesibility page */
 text-align: center;
 flex: 1;
 background: #162957;
@@ -822,31 +822,32 @@ transition-duration: 0.4s;
 
 /*Accessibility page*/
 .constructor{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 5%;
+    display: flex; /*to centrate elements horizontally*/
+    justify-content: center; 
+    width: 100%; /*Makes sure that the container fills the whole width*/
+    margin-top: 5%; /* gives space over the content*/
 }
 
 .con{
     background: #162957;
-    text-align: center;
-    max-width: 800px;
-    border-radius: 8px;
-    padding: 15px;
-    line-height: 1.7em;
-    color: white;
+    text-align: center; /* centrates the text horizontally*/
+    max-width: 800px; 
+    border-radius: 8px; /*creates the borders round shaped for smoother design*/
+    padding: 15px; /*cretes spacing around the text inside the element*/
+    line-height: 1.7em; 
+    color: white; /*font color is set to white for readability*/
     font-size: 1.15em;
 }
 
 #automatisedIMG img{
-    width: 800px;
+    width: 800px; /*creates an paricular width for the images to make it more visible*/
 }
 
 #colorblindIMG img{
-    width: 900px;
+    width: 900px; /*creates an paricular width for the images to make it more visible*/
 }
 
+ /*Responsive design for smaller screens than 800px*/
 @media only screen and (max-width: 800px) {
     
     .constructor{
