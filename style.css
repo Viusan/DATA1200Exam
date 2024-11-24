@@ -247,7 +247,7 @@ a {
     margin: 0 20px 70px 20px;
 }
 
-#otherCourseContainer h2{
+#otherCourseContainer h1{
     font-size: 2em;
 }
 
@@ -276,6 +276,10 @@ a {
     border-top: 1px solid #007EA7;
     display: flex;
     flex-flow: column wrap;/*Sets content as column*/
+}
+
+.otherCourseLiElement h2{
+    font-size: 1.3em;
 }
 
 /*StudentHistorier Section*/
