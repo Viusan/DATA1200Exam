@@ -9,7 +9,7 @@
 </head>
 <body class="github-page">
 <header>
-    <section class="menu-icon"onclick="toggleMenu()">&#9776;</section> <!-- tre liner som indikerer menyen
+    <button class="menu-icon"onclick="toggleMenu()">&#9776;</button> <!-- tre liner som indikerer menyen
 -->
     <nav id="nav-menu"   class="hidden"> <!-- &9776 en spesial kode som viser humburger meny. i java skricpt så er klikk funksjonen definert-->
         <ul> 
@@ -30,57 +30,107 @@
     <article class="introduksjon">
     <main>
         <!-- en kort beskrivelse om github og hvordan vi har brukt verktøyet  -->
-        <article class="kort">
-            <h2>Github</h2>
-            <p> Github er en verktøy for versjonskontroll og temarbeid som bidrar til å strukturere kodeprojekter systematisk.Den har vært en sentral knutepunkt for alle gruppemedlemmer til å samarbeidet enkelt og effektivt. På denne siden skal vi presentere hvordan vi har brukt Github for utføre projketet ved å illustrere prosessen gjennom bilder og forklaring.</p>
-    </article>
+        <article class="githubContainer">
+            <section class="kort">
+                <h2>Github</h2>
+                <p> Github er en verktøy for versjonskontroll og temarbeid som bidrar til å strukturere kodeprojekter systematisk.Den har vært en sentral knutepunkt for alle gruppemedlemmer til å samarbeidet enkelt og effektivt. På denne siden skal vi presentere hvordan vi har brukt Github for utføre projketet ved å illustrere prosessen gjennom bilder og forklaring.</p>
+            </section>
+        </article>
 <!-- en kort forklaring på versjonkontroll og kommunukasjon-->
-    <article class="kort">
-        <h3>1.Versjonskontroll og Kommunikasjon</h3>
-   <p>Github har en kraftig versjonskontrollsystem som gir oss muligheten til å spore og lagrer endringer som en "commit". </p>
+    <article class="githubContainer">
+        <section class="kort">
+            <h3>1.Versjonskontroll og Kommunikasjon</h3>
+            <p>Github har en kraftig versjonskontrollsystem som gir oss muligheten til å spore og lagrer endringer som en "commit". </p>
+        </section>
     </article>
 <!--andre seksjonen med bilder som viser våres teamarbeid-->
-<div class="row">
+<article class="row">
     <!-- første kolonne med bildet og eksempel på commit historikk-->
-    <div class="column">
+    <section class="column">
         <img src="Images/githubpage/committ history .png" alt="commit endringer"> <!--https://github.com/Viusan/DATA1200Exam/commits/main/-->
-        <div class="desc">
+        <section class="desc">
             <!--forklaring på bildet -->
-            Bildet viser et eksempel på hvordan vi samarbeidet og kommuniserte gjennom hele projektet</div>
-    </div>
-    <div class="column">
+            <p>Bildet viser et eksempel på hvordan vi samarbeidet og kommuniserte gjennom hele projektet</p>
+        </section>
+    </section>
+    <section class="column">
         <!--andre kolonne med bildet av små endringer-->
         <img src="Images/githubpage/small changes.png" alt="små endringer "> <!-- for at bilden skulle i kolonne så ble jeg  inspiert av  av https://www.w3schools.com/css/css_image_gallery.asp-->
        <!-- "alt attribute er tilgjenlighet av bildet"-->
         <!-- forklaring på bildet -->
-          <div class="desc">Et annet eksempel på små endringer vi har gjort underveis</div>
-    </div>
-</div>
+          <section class="desc">
+            <p>Et annet eksempel på små endringer vi har gjort underveis</p>
+          </section>
+    </section>
+</article>
 <!--tredje delen om teamarbeid og merge -konfliktløsning-->
-<article class="kort">
-    <h4>2.Temarbeid</h4><p>Ved hjelp av "branches" kunne vi jobbe parallet sammen uten å overlappe hverandre.Samtidig opplevde vi utfordringer som merge-konflikt under samarbeidet. Vi brukte github til å gjennømføre merge prosesser mellom branches.</p>
-    </article>
+<article class="githubContainer">
+    <section class="kort">
+        <h4>2.Temarbeid</h4><p>Ved hjelp av "branches" kunne vi jobbe parallet sammen uten å overlappe hverandre.Samtidig opplevde vi utfordringer som merge-konflikt under samarbeidet. Vi brukte github til å gjennømføre merge prosesser mellom branches.</p>
+    </section>
+</article>
 
-<div class="row">
+<article class="row">
     <!-- første kolonne med eksempel på samarbeid og konflikløsning -->
-    <div class="column">
+    <section class="column">
         <img src="Images/githubpage/commit merge conflict.png" alt="merge-konflikt"> <!--https://github.com/Viusan/DATA1200Exam/commits/main/-->
         <!-- forklaring på bildet-->
-        <div class="desc">Bildet viser merge-prosessen i Github. Det inkludrer en pull request, merge -commits og en konfliktløsning.Under merge-prosessen kan vi se at det oppsto en konflikt</div>
-    </div>
-    <div class="column">
+        <section class="desc">
+            <p>Bildet viser merge-prosessen i Github. Det inkludrer en pull request, merge -commits og en konfliktløsning.Under merge-prosessen kan vi se at det oppsto en konflikt</p>
+        </section>
+    </section>
+    <section class="column">
         <!-- -->
         <img src="Images/githubpage/håndtering av merge conflict.png" alt="håndtering-merge konflikt"> <!--https://github.com/Viusan/DATA1200Exam/commits/main/-->
-        <div class="desc">  Dette skjedde fordi to ulike teamedlemmer hadde opptadert samme del av koden samtidig.Vi brukte Githubs merge-verktøy og så at konflikten var knyttet til opptaderinger av menyen.Vi diskuterte endringene og fullførte merge -prosessen med en opptadert struktur</div>
-    </div>
-</div>
+        <section class="desc">  
+            <p>Dette skjedde fordi to ulike teamedlemmer hadde opptadert samme del av koden samtidig.Vi brukte Githubs merge-verktøy og så at konflikten var knyttet til opptaderinger av menyen.Vi diskuterte endringene og fullførte merge -prosessen med en opptadert struktur</p>
+        </section>
+    </section>
+</article>
 <!-- oppsumerings del -->
-    <article class="kort">
-        <h5>3.Resultat og rapport om bruk av Github</h5>
-        <p> Det hat vært en bratt læringskurve for oss gjennom hele projektet.Vi hadde styr og orden på projektet ved å bruke funkjoner som pull request,issues,branches osv.Til tross for dette, så møtet vi på utfordringer som merge-konflikter og nybegynnerfeil, men dette forsterket våres erfaring i bruk av versjonkontroll og konfliktløsning.Gjennom projketet har vi lært hvordan github støtter utvikling av effektiv samarbeid i webprojekter.</p>
-
+    <article class="githubContainer">
+        <section class="kort">
+            <h5>3.Resultat og rapport om bruk av Github</h5>
+            <p> Det hat vært en bratt læringskurve for oss gjennom hele projektet.Vi hadde styr og orden på projektet ved å bruke funkjoner som pull request,issues,branches osv.Til tross for dette, så møtet vi på utfordringer som merge-konflikter og nybegynnerfeil, men dette forsterket våres erfaring i bruk av versjonkontroll og konfliktløsning.Gjennom projketet har vi lært hvordan github støtter utvikling av effektiv samarbeid i webprojekter.</p>
+        </section>
     </article>
-    </main>
+</main>
+<footer>
+    <article id="footerContainer"><!--Footer container-->
+        <section><!--Quick information about the university-->
+            <h2>OSLO METROPOLITAN UNIVERSITY</h2>
+            <p>Postboks 4, St. Olavs plass</p>
+            <p>0130 Oslo</p>
+            <p>Tlf.: 67 23 50 00 </p>
+            <a id="contactUsAtag" href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+        </section>
+        <section id="footerOtherLinks"><!--Links to relevant pages for students-->
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">English</a></li>
+                <li><a href="https://www.oslomet.no/alumni">Almuni</a></li>
+                <li><a href="https://www.oslomet.no/om/ansatteoversikt">Ansattoversikt</a></li>
+                <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</a></li>
+                <li><a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a></li>
+                <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
+                <li><a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a></li>
+                <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapslar</a></li>
+                <li><a href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a></li>
+                <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a></li>
+                <li><a href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a></li>
+            </ul>
+        </section>
+        <section id="socialsContainer"><!--Container to OsloMet socials-->
+            <!--Image downlaoded from https://about.meta.com/brand/resources/facebook/logo/-->
+            <a href="https://www.facebook.com/oslomet/"><img src="Images/indexPage/logos/facebook.png" alt="facebook logo" class="socialMediaLogos">Facebook</a>
+            <!--Image downloaded from https://about.x.com/en/who-we-are/brand-toolkit-->
+            <a href="https://twitter.com/oslomet"><img src="Images/indexPage/logos/twitter.png" alt="twitter logo" class="socialMediaLogos">Twitter(X)</a>
+            <!--Image downloaded from https://discord.com/channels/892133541771632670/938403988058013766/1301521703754534944-->
+            <a href="https://no.linkedin.com/school/oslomet/"><img src="Images/indexPage/logos/linkedin.png" alt="linkedin logo" class="socialMediaLogos">LinkedIn</a>
+            <!--Image downloaded from https://discord.com/channels/892133541771632670/938403988058013766/1301521703754534944-->
+            <a href="https://www.instagram.com/oslomet/?hl=nb"><img src="Images/indexPage/logos/instagram.png" alt="instagram logo" class="socialMediaLogos">Instagram</a>
+        </section>
+    </article>
+</footer>
 <script src="script.js"></script>  <!-- javascript feil for å gjøre nettsiden mer brukervennlig -->
 </body>
 </html>
