@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bruk av Github for effektiv samarbeid</title>
-    <style>
+    <title>GitHub</title>
 
-        
-    </style>
 </head>
 <body class="github-page">
 <header>
-    <section class="menu-icon"onclick="toggleMenu()">&#9776;</section> <!-- This are the threee lines that indicates the menu-->
-    <nav id="nav-menu"   class="hidden"> <!-- &9776  is a special code that shows the hamburgermeny-->
+    <section class="menu-icon"onclick="toggleMenu()">&#9776;</section> <!-- tre liner som indikerer menyen
+-->
+    <nav id="nav-menu"   class="hidden"> <!-- &9776 en spesial kode som viser humburger meny. i java skricpt så er klikk funksjonen definert-->
         <ul> 
+            <!-- lenker som leder deg til ulike sider av nettsiden vår-->
             <li><a href="index.html">Hjem</a></li>
             <li><a href="accessibility.html">Tilgjengelighet</a></li>
             <li><a href="activity.html">Aktivitet</a></li>
@@ -22,72 +21,67 @@
         </ul>
     </nav>
 </header>
+<!-- her er sekjonen som inneholder github logo-->
 <section class="image-container">
-    <img src="Images/githubpage/githublogo.png" alt="GitHub-logo" class="logo"> 
-
+    <img src="Images/githubpage/githublogo.png" alt="GitHub-logo" class="logo"> <!-- kilde:https://www.pngall.com/github-logo-png/-->
+<!-- "alt" hjelper brukere med synshemminger med å beskrive bildet-->
 </section>
-    <section class="introduksjon">
-        <h1>Bruk av Github for effektiv samarbeid</h1>
+<!--dette er introduksjon delen -->
+    <article class="introduksjon">
+    <main>
+        <!-- en kort beskrivelse om github og hvordan vi har brukt verktøyet  -->
         <article class="kort">
-            <h2>Introduksjon til Git-hub</h2>
-            <p> Github er en verktøy for versjonskontroll og temarbeid som bidrar til å strukturere kodeprojekter systematisk.Den har vært en sentral knutepunkt for alle gruppemedlemmer til å samarbeidet enkelt og effektivt.</p>
-        </article>
-    </section>
-   <main>
-</main>
-<section class="fordeler">
-    <article class="kort">
-        <h3>Versjonskontroll og Kommunikasjon</h3>
-   <p>Github har en kraftig versjonskontrollsystem som gir oss muligheten til å spore og lagrer endringer som en "commit". </p>
-  
+            <h2>Github</h2>
+            <p> Github er en verktøy for versjonskontroll og temarbeid som bidrar til å strukturere kodeprojekter systematisk.Den har vært en sentral knutepunkt for alle gruppemedlemmer til å samarbeidet enkelt og effektivt. På denne siden skal vi presentere hvordan vi har brukt Github for utføre projketet ved å illustrere prosessen gjennom bilder og forklaring.</p>
     </article>
-
-</section>
+<!-- en kort forklaring på versjonkontroll og kommunukasjon-->
+    <article class="kort">
+        <h3>1.Versjonskontroll og Kommunikasjon</h3>
+   <p>Github har en kraftig versjonskontrollsystem som gir oss muligheten til å spore og lagrer endringer som en "commit". </p>
+    </article>
+<!--andre seksjonen med bilder som viser våres teamarbeid-->
 <div class="row">
+    <!-- første kolonne med bildet og eksempel på commit historikk-->
     <div class="column">
-        <img src="Images/githubpage/committ history .png" alt="commit endringer">
-        <div class="desc">Bildet viser et eksempel på hvordan vi samarbeidet og kommuniserte gjennom hele projektet</div>
+        <img src="Images/githubpage/committ history .png" alt="commit endringer"> <!--https://github.com/Viusan/DATA1200Exam/commits/main/-->
+        <div class="desc">
+            <!--forklaring på bildet -->
+            Bildet viser et eksempel på hvordan vi samarbeidet og kommuniserte gjennom hele projektet</div>
     </div>
     <div class="column">
-        <img src="Images/githubpage/small changes.png" alt="endringer små">
-        <div class="desc">Et annet eksempel på små endringer vi har gjort underveis</div>
+        <!--andre kolonne med bildet av små endringer-->
+        <img src="Images/githubpage/small changes.png" alt="små endringer "> <!-- for at bilden skulle i kolonne så ble jeg  inspiert av  av https://www.w3schools.com/css/css_image_gallery.asp-->
+       <!-- "alt attribute er tilgjenlighet av bildet"-->
+        <!-- forklaring på bildet -->
+          <div class="desc">Et annet eksempel på små endringer vi har gjort underveis</div>
     </div>
 </div>
+<!--tredje delen om teamarbeid og merge -konfliktløsning-->
 <article class="kort">
-    <h5>Temarbeid</h5>
-<p>Ved hjelp av "branches" kunne vi jobbe parallet sammen uten å overlappe hverandre.Samtidig opplevde vi utfordringer som ved merge-konfliker under samarbeidet. Vi brukte github til å gjennømføre merge prosesser mellom branches.</p>
-    
-</article>
+    <h4>2.Temarbeid</h4><p>Ved hjelp av "branches" kunne vi jobbe parallet sammen uten å overlappe hverandre.Samtidig opplevde vi utfordringer som merge-konflikt under samarbeidet. Vi brukte github til å gjennømføre merge prosesser mellom branches.</p>
+    </article>
+
 <div class="row">
+    <!-- første kolonne med eksempel på samarbeid og konflikløsning -->
     <div class="column">
-        <img src="Images/githubpage/commit merge conflict.png" alt="merge-konflikt">
+        <img src="Images/githubpage/commit merge conflict.png" alt="merge-konflikt"> <!--https://github.com/Viusan/DATA1200Exam/commits/main/-->
+        <!-- forklaring på bildet-->
         <div class="desc">Bildet viser merge-prosessen i Github. Det inkludrer en pull request, merge -commits og en konfliktløsning.Under merge-prosessen kan vi se at det oppsto en konflikt</div>
     </div>
     <div class="column">
-        <img src="Images/githubpage/håndtering av merge conflict.png" alt="håndtering-merge konflikt">
+        <!-- -->
+        <img src="Images/githubpage/håndtering av merge conflict.png" alt="håndtering-merge konflikt"> <!--https://github.com/Viusan/DATA1200Exam/commits/main/-->
         <div class="desc">  Dette skjedde fordi to ulike teamedlemmer hadde opptadert samme del av koden samtidig.Vi brukte Githubs merge-verktøy og så at konflikten var knyttet til opptaderinger av menyen.Vi diskuterte endringene og fullførte merge -prosessen med en opptadert struktur</div>
     </div>
 </div>
-    
-   </main>
-    
-<footer>
-    <article id="footerContainer">
-        <section>
-            <h2>OSLO METROPOLITAN UNIVERSITY</h2>
-            <p>Postboks 4, St. Olavs plass</p>
-            <p>0130 Oslo</p>
-            <p>Tlf.: 67 23 50 00 </p>
-            <a href="">Kontakt oss</a>
-        </section>
-        <section id="socialsContainer">
-            <a href=""><img src="Images/logos/facebook.png" alt="facebook logo" class="socialMediaLogos">Facebook</a>
-            <a href=""><img src="Images/logos/twitter.png" alt="twitter logo" class="socialMediaLogos">Twitter(X)</a>
-            <a href=""><img src="Images/logos/linkedin.png" alt="linkedin logo" class="socialMediaLogos">LinkedIn</a>
-            <a href=""><img src="Images/logos/instagram.png" alt="instagram logo" class="socialMediaLogos">Instagram</a>
-        </section>
-</footer>
+<!-- oppsumerings del -->
+    <article class="kort">
+        <h5>3.Resultat og rapport om bruk av Github</h5>
+        <p> Det hat vært en bratt læringskurve for oss gjennom hele projektet.Vi hadde styr og orden på projektet ved å bruke funkjoner som pull request,issues,branches osv.Til tross for dette, så møtet vi på utfordringer som merge-konflikter og nybegynnerfeil, men dette forsterket våres erfaring i bruk av versjonkontroll og konfliktløsning.Gjennom projketet har vi lært hvordan github støtter utvikling av effektiv samarbeid i webprojekter.</p>
 
-<script src="script.js"></script>
+    </article>
+    </main>
+    
+<script src="script.js"></script>  <!-- javascript feil for å gjøre nettsiden mer brukervennlig-->
 </body>
 </html>

@@ -492,55 +492,65 @@ a {
     }
 }
 
-/* Github */
+/* Github  Page */
+/*style for logo*/
+.logo { height: auto;
+    width: 150px;
+    display: block; /*it shows the element as a block*/
+    background-color: transparent; /* removes backgrounf color*/
+    position: absolute;
+    height: auto;
+    top: 15px; /* placment of the logo from the top*/
+    left: 15px; /*placement of the logo from the left */
+}
+    
+/* style for body element when the class" github page"is active */
 body.github-page{
-    background-color: #ddeaf0;
+    background-color: #f1f6f9; /* backgroung colour for the page*/
+    display: flex;
+    align-items: center; /* centers content*/
+    flex-direction: column; /* content is arranged in columns*/
 }
+/* style for intro part*/
 .introduksjon{
-    text-align: center;
-    color: #090808;
-    top: 0;
-    padding: 0;
-    margin: 0
+    text-align: center; /* center content*/
+    color: #090808;/* set text colour  black*/
+    padding: 0; 
+    margin: 0;
+    line-height: 1.9;/* gives good space between lines for bette reading*/
 
 }
-
-.introduksjon h1 h2 h3 h4 h5{
-    color: #3073c0;
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
+/*spesific style for paraghrapes*/
 .introduksjon p{
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* gives space */
     margin:auto;
     text-align: center;
+    line-height: 1.8;
 
 
 }
-.fordeler{
-    text-align: center;
-    padding: auto;
-}
+
 .kort{
     background: #f5f5f5;
     text-align: center;
-    max-width: 500px;
+    max-width: 850px;
+    margin: 25px;
+    justify-content: center;
     border-radius: 8px;
+    align-items: center;
     padding: 0;
-
+    font-size: 1.7em;
+    line-height: 1.5;
 
 }
-.logo {
-    height: auto;
-    width: 150px;
-    display: block;
-    background-color: transparent;
+.kort h2 h3 h4 h5{
+    text-decoration: underline;
 }
 .desc{
     font-size: 20px;
     text-align: center;
     color: #424242;
+    max-width: 300px;
 
 }
 .column{
@@ -570,7 +580,7 @@ transition-duration: 0.4s;
 }
 
 @media(max-width:768px){
-    .introduksjon h1 h2 h3 h4 h5{
+    .kort  h2 h3 h4 h5{
         font-size: 2rem;
     }
     .introduksjon p {
