@@ -559,15 +559,15 @@ a {
 
 }
 .column{  /*CSS code from .comlun to .row is also used in the css for the accesibility page */
-text-align: center;
-flex: 1;
-background: #162957;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-padding: 15px;
-transition-duration: 0.4s;
+    text-align: center;
+    flex: 1;
+    background: #162957;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition-duration: 0.4s;
 }
-.column:hover{
+.column:hover{/*this is what the transformation will do when hovered*/
     transform: scale(1.05);
 }
 .column img{
